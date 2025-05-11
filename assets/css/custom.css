@@ -16,6 +16,15 @@
       transform: scale(1.15);;
   }
 
+  :root {
+    --kt-green: #6e996d;
+    --kt-litegreen: #98A876;
+    --kt-gold: #c2a383;
+    --kt-gray: #d9d9d9;
+    --dark-text: #333;
+    --light-bg: #f5f3f0;
+  }
+
   /* ----- Homepage ----- */
   .homepage #header-wrapper {
       position: relative;
