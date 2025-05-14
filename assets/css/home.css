@@ -56,7 +56,7 @@
     font-size: clamp(2rem, 4vw, 5rem);
   }
 
-/* STICKY NAVIGATION STYLES */
+/* ----- STICKY NAVIGATION STYLES ----- */
 #header {
   position: fixed; /* Change from relative to fixed */
   top: 0;

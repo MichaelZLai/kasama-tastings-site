@@ -2386,7 +2386,7 @@ input, select, textarea {
 	#footer-wrapper {
 		background-color: var(--footer-bg);
 		color: var(--footer-text);
-		padding: 4em 0 0;
+		padding: 0;
 	}
 	
 	.footer-content {

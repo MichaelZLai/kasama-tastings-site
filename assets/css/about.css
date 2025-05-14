@@ -1,0 +1,423 @@
+@font-face {
+	font-family: 'BrittanySignature';
+	src: url('../webfonts/BrittanySignature.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+  .brittany {
+    font-family: 'BrittanySignature';
+  }
+
+  .grow {
+    transition: transform 0.3s ease;
+  }
+  .grow:hover {
+      transform: scale(1.15);;
+  }
+
+  :root {
+    --kt-green: #6e996d;
+    --kt-litegreen: #98A876;
+    --kt-gold: #c2a383;
+    --kt-gray: #d9d9d9;
+    --dark-text: #333;
+    --light-bg: #f5f3f0;
+  }
+
+
+  /* ----- Top Header ----- */
+  .about #header-wrapper {
+    position: relative;
+    padding: 1em 0 2em 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/sommelier.jpg");
+    height: 35vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about #hero * {
+  pointer-events: auto;
+}
+.about #hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  z-index: 900; /* Lower than navigation */
+  pointer-events: none; /* Allow clicks to pass through to elements below */
+}
+.about #hero p{
+  letter-spacing: 2px;
+}
+.about #header-wrapper header{
+  font-size: clamp(1rem, 1.5vw, 3rem);
+}
+
+  /* ----- STICKY NAVIGATION STYLES ----- */
+#header {
+    position: fixed; /* Change from relative to fixed */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: transparent; /* Semi-transparent background */
+    padding: 10px 0; /* Add some padding for better appearance */
+    transition: background-color 0.3s ease, padding 0.3s ease;
+  }
+  
+  /* Scrolled state for header */
+  .scrolled #header {
+    background-color: rgba(0, 0, 0, 0.9); /* More opaque when scrolled */
+    padding: 5px 0; /* Slightly smaller padding when scrolled for a compact look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow when scrolled */
+  }
+  
+  #nav {
+      position: relative;
+      z-index: 1001; /* Even higher z-index */
+      pointer-events: auto; /* Ensure clicks are registered */
+      text-align: right;
+      margin-top:0;
+  }
+  
+  #nav ul {
+    display: inline-flex; /* Change from block to inline-flex */
+    justify-content: flex-end; /* Align items to the end (right) */
+    pointer-events: auto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #nav ul li {
+    pointer-events: auto;
+    margin-left: 0; /* Space between nav items */
+    margin-right: 1.5em; /* No right margin */
+  }
+  
+  #nav ul li a {
+      position: relative;
+      z-index: 1002;
+      pointer-events: auto;
+      display: inline-block;
+      padding: 0;
+  }
+  
+  #nav a {
+    position: relative;
+    z-index: 1002;
+    pointer-events: auto;
+    display: inline-block;
+    color: #fff;
+    border: none;
+    padding: 0.5em 0.75em;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  #nav a:hover {
+    color: #c2a383; /* Wine/champagne color */
+    text-shadow: 0 0 8px rgba(194, 163, 131, 0.6); /* Glowing effect */
+  }
+
+
+  
+/* Founder Profile Section */
+.founder-profile {
+    display: flex;
+    margin: 4em auto;
+    overflow: visible; /* Changed from hidden to allow the custom shape */
+    max-width: 1200px;
+    position: relative;
+}
+
+.founder-image {
+    flex: 0 0 45%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0; /* Remove border radius */
+    margin-right: 2em;
+}
+
+.founder-image img {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    z-index: 0;
+}
+
+.founder-bio {
+    flex: 1;
+    padding: 3em 4em 3em 0;
+    z-index: 2;
+}
+
+.founder-name {
+    color: var(--kt-green);
+    font-size: 1.6em;
+    line-height: 0.8;
+    margin-bottom: 0.6em;
+}
+
+.founder-name span.brittany {
+    display: block;
+    font-size: 2.8em;
+    line-height: 1;
+    margin-top: 0.1em;
+    color: var(--kt-green);
+}
+
+.bio-text {
+    margin-bottom: 1.2em;
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 980px) {
+    .founder-profile {
+        flex-direction: column;
+        overflow: visible;
+        margin: 2em auto;
+        padding: 0;
+        background-color: transparent;
+    }
+    
+    .founder-image {
+        width: 80%;
+        max-width: 500px;
+        height: 0;
+        padding-bottom: 80%; /* Creates a square aspect ratio */
+        margin: 0 auto 2em auto;
+        position: relative;
+    }
+    
+    .founder-bio {
+        padding: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        border-radius: 20px;
+        padding: 2em;
+    }
+    
+    .founder-name {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .founder-name {
+        font-size: 1.4em;
+    }
+    
+    .founder-name span.brittany {
+        font-size: 2.4em;
+    }
+    
+    .founder-image {
+        width: 90%;
+        padding-bottom: 90%;
+    }
+    
+    .bio-text {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .founder-image {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+    
+    .founder-name span.brittany {
+        font-size: 2em;
+    }
+    
+    .bio-text {
+        font-size: 0.85em;
+        line-height: 1.5;
+    }
+    
+    .founder-bio {
+        padding: 1.5em;
+    }
+}
+  
+  /* Quote section styling */
+  .quote-section {
+    background-color: #f9f9f9;
+    padding: 3em 2em;
+    border-radius: 8px;
+    margin: 3em 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  .quote-section:before,
+  .quote-section:after {
+    content: '\201C';
+    font-family: Georgia, serif;
+    font-size: 5em;
+    color: rgba(110, 153, 109, 0.1);
+    position: absolute;
+  }
+  
+  .quote-section:before {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .quote-section:after {
+    content: '\201D';
+    bottom: -20px;
+    right: 10px;
+  }
+  
+  .quote-section .quote {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #555;
+    font-style: italic;
+  }
+  
+  .quote-section .attribution {
+    margin-top: 1.5em;
+    font-weight: 500;
+    color: var(--kt-green);
+  }
+  
+  /* Timeline styling */
+  .timeline {
+    position: relative;
+    margin: 3em 0;
+    padding-left: 2em;
+  }
+  
+  .timeline:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--kt-green), #86b385);
+    border-radius: 2px;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2em;
+    padding-left: 1.5em;
+  }
+  
+  .timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -2.4em;
+    top: 0.5em;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--kt-green);
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 3px rgba(110, 153, 109, 0.3);
+  }
+  
+  .timeline-item .year {
+    font-weight: 700;
+    color: var(--kt-green);
+    margin-bottom: 0.5em;
+  }
+  
+  .timeline-item h4 {
+    margin-bottom: 0.5em;
+    color: #444;
+  }
+  
+  .timeline-item p {
+    color: #666;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 980px) {
+    .about-title {
+      font-size: 5rem;
+    }
+    
+    header.major h2 {
+      font-size: 2.2em;
+    }
+  }
+  
+  @media screen and (max-width: 736px) {
+    .about #header-wrapper {
+      height: 60vh;
+    }
+    
+    .about-title {
+      font-size: 4rem;
+    }
+    
+    .about-content-wrapper {
+      padding: 2em 0;
+    }
+    
+    .team-member img {
+      max-width: 150px;
+    }
+    
+    .quote-section {
+      padding: 2em 1em;
+    }
+    
+    header.major h2 {
+      font-size: 2em;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .about #header-wrapper {
+      height: 50vh;
+    }
+    
+    .about-title {
+      font-size: 3rem;
+    }
+    
+    .about-intro {
+      font-size: 1em;
+    }
+    
+    .about-text {
+      font-size: 0.9em;
+    }
+    
+    .quote-section .quote {
+      font-size: 1.1em;
+    }
+    
+    .timeline {
+      padding-left: 1.5em;
+    }
+    
+    .timeline-item {
+      padding-left: 1em;
+    }
+    
+    .timeline-item:before {
+      left: -1.9em;
+    }
+    
+    header.major h2 {
+      font-size: 1.8em;
+    }
+  }
