@@ -215,7 +215,9 @@
 }
 
 .service-header {
-  display: block;
+  min-height: 5.4rem; /* Fixed height for uniform layout - roughly 3 lines */
+  display: flex;
+  align-items: flex-start;
   margin-bottom: 1rem;
 }
 
@@ -396,16 +398,16 @@
   transform: translateY(-3px);
 }
     
-/* Custom styling for the Custom Event card */
-.custom-event-card {
+/* Popular Card Badge */
+.popular-card {
   position: relative;
 }
 
-.custom-event-card::before {
+.popular-card::before {
   content: "POPULAR";
   position: absolute;
-  top: 15px;
-  left: 15px;
+  bottom: 250px;
+  right: 15px;
   background: var(--kt-gold);
   color: white;
   padding: 0.3rem 0.8rem;
@@ -417,35 +419,7 @@
   z-index: 10;
 }
 
-.custom-event-card .service-header h3 {
-  background: linear-gradient(135deg, var(--kt-green), var(--kt-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
-.custom-event-card .service-price {
-  background: linear-gradient(135deg, var(--kt-green), var(--kt-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-weight: 700;
-}
-
-/* Special styling for Request Quote button */
-.custom-event-card .book-btn {
-  background: linear-gradient(135deg, var(--kt-green), var(--kt-gold));
-  color: white;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.custom-event-card .book-btn:hover {
-  background: linear-gradient(135deg, #546956, #a68660);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(110, 153, 109, 0.4);
-}
 
 /* ----- MODAL STYLES ----- */
 .modal {
@@ -648,20 +622,4 @@
       top: 15px;
       right: 20px;
   }
-}
-
-/* Price Badge */
-.price-badge {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: var(--kt-green);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  font-size: 1.1rem;
-  font-weight: 700;
-  box-shadow: 0 4px 12px rgba(110, 153, 109, 0.3);
-  z-index: 10;
-  backdrop-filter: blur(10px);
 }

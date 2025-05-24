@@ -145,12 +145,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function showModal(service) {
+        // Determine the button text based on service type
+        const buttonText = service.title.includes('Custom Event') ? 'REQUEST QUOTE' : 'BOOK NOW';
+
         const modalContent = `
             <div class="modal-left">
                 <h2 class="modal-title">${service.title}</h2>
                 <div class="modal-price-info">${service.price.replace(/\n/g, '<br>')}</div>
                 <p class="modal-description">${service.description}</p>
-                <button class="modal-book-btn">BOOK NOW</button>
+                <button class="modal-book-btn">${buttonText}</button>
             </div>
             <div class="modal-right">
                 <img src="${service.image}" alt="${service.title}" class="modal-image">
