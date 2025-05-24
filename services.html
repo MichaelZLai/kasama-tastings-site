@@ -11,6 +11,7 @@
 		<meta property="og:image" content="images/logo.png" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/services.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 		<link rel="icon" type="image/png" href="images/KT-favicon.png"/>
 	</head>
 	<body class="services is-preload">
@@ -42,7 +43,117 @@
 
 			</div>
 
+			<!-- Main Services Content -->
+			<main class="services-main">
+				<div class="container">
+					<!-- Services Grid -->
+					<div class="services-grid">
+						
+						<!-- Service 1: Wine Fundamentals -->
+						<div class="service-card">
+							<div class="service-image">
+								<img src="images/wine-fundamentals.jpg" alt="Wine tasting with chocolate pairings" />
+							</div>
+							<div class="service-content">
+								<div class="service-header">
+									<h3>Wine Fundamentals: Discover Your Palate</h3>
+									<span class="service-price">\$400</span>
+								</div>
+								<div class="service-actions">
+									<button class="btn book-btn">BOOK NOW</button>
+									<button class="btn learn-btn" data-service="wine-fundamentals">LEARN MORE</button>
+								</div>
+							</div>
+						</div>
 
+						<!-- Service 2: Sparkling Wine Masterclass -->
+						<div class="service-card">
+							<div class="service-image">
+								<img src="images/sparkling-wine.jpg" alt="Hand holding glass of sparkling wine" />
+							</div>
+							<div class="service-content">
+								<div class="service-header">
+									<h3>Sparkling Wine Masterclass: Sip, Learn, Sparkle</h3>
+									<span class="service-price">\$450</span>
+								</div>
+								<div class="service-actions">
+									<button class="btn book-btn">BOOK NOW</button>
+									<button class="btn learn-btn" data-service="sparkling-wine">LEARN MORE</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- Service 3: Sicily Uncorked -->
+						<div class="service-card">
+							<div class="service-image">
+								<img src="images/sicily-wines.jpg" alt="Woman enjoying Sicilian wine tasting" />
+							</div>
+							<div class="service-content">
+								<div class="service-header">
+									<h3>Sicily Uncorked: A Journey Through Island Wines</h3>
+									<span class="service-price">\$450</span>
+								</div>
+								<div class="service-actions">
+									<button class="btn book-btn">BOOK NOW</button>
+									<button class="btn learn-btn" data-service="sicily-uncorked">LEARN MORE</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- Service 4: Texas Vintages -->
+						<div class="service-card">
+							<div class="service-image">
+								<img src="images/texas-wines.jpg" alt="Texas wine tasting" />
+							</div>
+							<div class="service-content">
+								<div class="service-header">
+									<h3>Texas Vintages: Sip the Spirit of the Lone Star State</h3>
+									<span class="service-price">\$430</span>
+								</div>
+								<div class="service-actions">
+									<button class="btn book-btn">BOOK NOW</button>
+									<button class="btn learn-btn" data-service="texas-vintages">LEARN MORE</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- Service 5: Non-Alcoholic Wines -->
+						<div class="service-card">
+							<div class="service-image">
+								<img src="images/non-alcoholic-wines.jpg" alt="Non-alcoholic wine tasting" />
+							</div>
+							<div class="service-content">
+								<div class="service-header">
+									<h3>Elevated Sips: The Art of Non-Alcoholic Wines</h3>
+									<span class="service-price">\$450</span>
+								</div>
+								<div class="service-actions">
+									<button class="btn book-btn">BOOK NOW</button>
+									<button class="btn learn-btn" data-service="non-alcoholic">LEARN MORE</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- Service 6: Custom Event -->
+						<div class="service-card custom-event-card">
+							<div class="service-image">
+								<img src="images/custom-event.jpg" alt="Custom wine event" />
+							</div>
+							<div class="service-content">
+								<div class="service-header">
+									<h3>Custom Event: Tailored Wine Experiences</h3>
+									<span class="service-price">Price Varies</span>
+								</div>
+								<div class="service-actions">
+									<button class="btn book-btn">REQUEST QUOTE</button>
+									<button class="btn learn-btn" data-service="custom-event">LEARN MORE</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</main>
 
 			<!-- Footer -->
 			<div id="footer-wrapper">
@@ -94,6 +205,16 @@
 
 		</div>
 
+		<!-- Service Modal -->
+		<div id="serviceModal" class="modal">
+			<div class="modal-content">
+				<span class="modal-close">&times;</span>
+				<div class="modal-body">
+					<!-- Content will be dynamically inserted here -->
+				</div>
+			</div>
+		</div>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
@@ -103,6 +224,7 @@
 			<script src="assets/js/main.js"></script>
 
 			<script src="assets/js/stickyheader.js"></script>
+			<script src="assets/js/services.js"></script>
 
 	</body>
 </html>
