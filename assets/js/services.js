@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Wine Fundamentals: Discover your Palate',
             price: '\$400 | 6 Guests\n1 - 1.5 hour\nexperience',
             description: 'Explore the essentials of wine with this beginner-friendly experience. Learn how to taste wine like a pro, uncover key flavor profiles, and discover the art of pairing wine with food. NA wine offering available.*',
-            image: 'images/wine-fundamentals.jpg',
+            image: 'images/services-fundamentals.jpg',
             details: {
                 included: [
                     '5 carefully selected wines from different regions',
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Sparkling Wine Masterclass: Sip, Learn, Sparkle',
             price: '\$450 | 6 Guests\n2 - 2.5 hour\nexperience',
             description: 'Dive into the world of bubbles! Explore Champagne, Prosecco, Cava, and more. Learn production methods and perfect food pairings with this effervescent experience.',
-            image: 'images/sparkling-wine.jpg',
+            image: 'images/services-sparkling.jpg',
             details: {
                 included: [
                     '6 premium sparkling wines from around the world',
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Sicily Uncorked: A Journey Through Island Wines',
             price: '\$450 | 6 Guests\n2 - 2.5 hour\nexperience',
             description: 'Explore the unique terroir of Sicily through indigenous grape varieties. Discover volcanic soils and Mediterranean influences in every glass from this ancient wine region.',
-            image: 'images/sicily-wines.jpg',
+            image: 'images/services-sicily.jpg',
             details: {
                 included: [
                     '5 authentic Sicilian wines from Mount Etna region',
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Texas Vintages: Sip the Spirit of the Lone Star State',
             price: '$430 | 6 Guests\n2 - 2.5 hour\nexperience',
             description: 'Discover the hidden gems of Texas wine country! From Hill Country to High Plains, explore award-winning local vineyards and taste the terroir of the Lone Star State.',
-            image: 'images/texas-wines.jpg',
+            image: 'images/services-texas.jpg',
             details: {
                 included: [
                     '6 premium Texas wines from different regions',
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Elevated Sips: The Art of Non-Alcoholic Wines',
             price: '$450 | 6 Guests\n2 - 2.5 hour\nexperience',
             description: 'Experience the sophistication of wine culture without the alcohol! Discover premium non-alcoholic wines that deliver complex flavors and elegant experiences for everyone.',
-            image: 'images/non-alcoholic-wines.jpg',
+            image: 'images/services-nonalcohol.jpg',
             details: {
                 included: [
                     '7 premium non-alcoholic wines from around the world',
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Custom Event: Tailored Wine Experiences',
             price: 'Price Varies\nStarting at $300\nCustom quotes available',
             description: 'Create your perfect wine experience! From corporate events to milestone celebrations, we\'ll design a bespoke tasting that perfectly matches your vision and budget.',
-            image: 'images/custom-event.jpg',
+            image: 'images/services-custom.jpg',
             details: {
                 included: [
                     'Corporate team building events',

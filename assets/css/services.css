@@ -215,17 +215,12 @@
 }
 
 .service-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: block;
   margin-bottom: 1rem;
-  gap: 1rem;
 }
 
 .service-header h3 {
-  font-family: 'BrittanySignature', cursive;
-  font-size: 1.8rem;
-  color: var(--dark-text);
+  font-size: 1.6rem;
   margin: 0;
   line-height: 1.2;
   flex: 1;
@@ -534,9 +529,7 @@
 }
 
 .modal-title {
-  font-family: 'BrittanySignature', cursive;
   font-size: 3rem;
-  color: var(--dark-text);
   margin-bottom: 1rem;
   line-height: 1.1;
 }
@@ -655,4 +648,20 @@
       top: 15px;
       right: 20px;
   }
+}
+
+/* Price Badge */
+.price-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--kt-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(110, 153, 109, 0.3);
+  z-index: 10;
+  backdrop-filter: blur(10px);
 }
