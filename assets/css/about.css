@@ -125,299 +125,241 @@
 
 
   
-/* Founder Profile Section */
-.founder-profile {
-    display: flex;
-    margin: 4em auto;
-    overflow: visible; /* Changed from hidden to allow the custom shape */
-    max-width: 1200px;
-    position: relative;
+/* ----- ABOUT MAIN CONTENT ----- */
+.about-main {
+  background-color: var(--light-bg);
+  padding: 6rem 0;
+  min-height: 60vh;
 }
 
-.founder-image {
-    flex: 0 0 45%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 0; /* Remove border radius */
-    margin-right: 2em;
+/* ----- ABOUT HERO SECTION ----- */
+.about-hero {
+  margin-bottom: 6rem;
 }
 
-.founder-image img {
-    width: 120%;
-    height: 120%;
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
-    top: -10%;
-    left: -10%;
-    z-index: 0;
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.founder-bio {
-    flex: 1;
-    padding: 3em 4em 3em 0;
-    z-index: 2;
+.about-image {
+  position: relative;
 }
 
-.founder-name {
-    color: var(--kt-green);
-    font-size: 1.6em;
-    line-height: 0.8;
-    margin-bottom: 0.6em;
+.about-image img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  /* border-radius: 40% 60% 25% 75% / 15% 35% 40% 20%; */
+  border-radius: 35px;
 }
 
-.founder-name span.brittany {
-    display: block;
-    font-size: 2.8em;
-    line-height: 1;
-    margin-top: 0.1em;
-    color: var(--kt-green);
+.about-image:hover img {
+  transform: translateY(-5px);
 }
 
-.bio-text {
-    margin-bottom: 1.2em;
-    font-size: 0.95em;
-    line-height: 1.6;
-    color: #555;
+.about-text h2 {
+  font-size: 3.9rem;
+  color: var(--kt-green);
+  margin-bottom: 2rem;
+  line-height: 1.2;
 }
 
-/* Responsive styling */
-@media screen and (max-width: 980px) {
-    .founder-profile {
-        flex-direction: column;
-        overflow: visible;
-        margin: 2em auto;
-        padding: 0;
-        background-color: transparent;
-    }
-    
-    .founder-image {
-        width: 80%;
-        max-width: 500px;
-        height: 0;
-        padding-bottom: 80%; /* Creates a square aspect ratio */
-        margin: 0 auto 2em auto;
-        position: relative;
-    }
-    
-    .founder-bio {
-        padding: 0;
-        width: 100%;
-        background-color: #f0f0f0;
-        border-radius: 20px;
-        padding: 2em;
-    }
-    
-    .founder-name {
-        text-align: center;
-    }
+.about-text h2 .meet-text {
+  font-size: 2rem; /* Smaller than the main heading */
+  display: block;
 }
 
-@media screen and (max-width: 736px) {
-    .founder-name {
-        font-size: 1.4em;
-    }
-    
-    .founder-name span.brittany {
-        font-size: 2.4em;
-    }
-    
-    .founder-image {
-        width: 90%;
-        padding-bottom: 90%;
-    }
-    
-    .bio-text {
-        font-size: 0.9em;
-    }
+.about-story p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-story p:last-child {
+  margin-bottom: 0;
+}
+
+/* ----- VALUES SECTION ----- */
+.values-section {
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  color: var(--dark-text);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.value-card h4 {
+  color: var(--kt-green);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.value-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* ----- CLOSING QUOTE SECTION ----- */
+.closing-quote-section {
+  margin: 4rem 0 2rem 0;
+  text-align: center;
+}
+
+.quote-content blockquote {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.quote-content blockquote p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: var(--dark-text);
+  font-style: italic;
+  margin: 0;
+}
+
+/* Optional: Add quotation marks */
+.quote-content blockquote::before {
+  content: '"';
+  font-size: 4rem;
+  color: var(--kt-gold);
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-family: serif;
+}
+
+
+/* ----- ANIMATIONS ----- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-hero,
+.mission-section,
+.values-section {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.value-card:nth-child(1) { animation-delay: 0.1s; }
+.value-card:nth-child(2) { animation-delay: 0.2s; }
+.value-card:nth-child(3) { animation-delay: 0.3s; }
+.value-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* ----- RESPONSIVE DESIGN ----- */
+@media screen and (max-width: 1024px) {
+  .about-content {
+    gap: 3rem;
+  }
+  
+  .values-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-main {
+    padding: 4rem 0;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 2.8rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .value-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .founder-image {
-        width: 100%;
-        padding-bottom: 100%;
-    }
-    
-    .founder-name span.brittany {
-        font-size: 2em;
-    }
-    
-    .bio-text {
-        font-size: 0.85em;
-        line-height: 1.5;
-    }
-    
-    .founder-bio {
-        padding: 1.5em;
-    }
+  .about #header-wrapper {
+    height: 40vh;
+  }
+
+  .about-main {
+    padding: 3rem 0;
+  }
+
+  .about-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-story p {
+    font-size: 1rem;
+  }
+
+  .value-card {
+    padding: 2rem 1rem;
+  }
 }
-  
-  /* Quote section styling */
-  .quote-section {
-    background-color: #f9f9f9;
-    padding: 3em 2em;
-    border-radius: 8px;
-    margin: 3em 0;
-    text-align: center;
-    position: relative;
-  }
-  
-  .quote-section:before,
-  .quote-section:after {
-    content: '\201C';
-    font-family: Georgia, serif;
-    font-size: 5em;
-    color: rgba(110, 153, 109, 0.1);
-    position: absolute;
-  }
-  
-  .quote-section:before {
-    top: 10px;
-    left: 10px;
-  }
-  
-  .quote-section:after {
-    content: '\201D';
-    bottom: -20px;
-    right: 10px;
-  }
-  
-  .quote-section .quote {
-    font-size: 1.2em;
-    line-height: 1.6em;
-    color: #555;
-    font-style: italic;
-  }
-  
-  .quote-section .attribution {
-    margin-top: 1.5em;
-    font-weight: 500;
-    color: var(--kt-green);
-  }
-  
-  /* Timeline styling */
-  .timeline {
-    position: relative;
-    margin: 3em 0;
-    padding-left: 2em;
-  }
-  
-  .timeline:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 4px;
-    background: linear-gradient(to bottom, var(--kt-green), #86b385);
-    border-radius: 2px;
-  }
-  
-  .timeline-item {
-    position: relative;
-    margin-bottom: 2em;
-    padding-left: 1.5em;
-  }
-  
-  .timeline-item:before {
-    content: '';
-    position: absolute;
-    left: -2.4em;
-    top: 0.5em;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: var(--kt-green);
-    border: 3px solid #fff;
-    box-shadow: 0 0 0 3px rgba(110, 153, 109, 0.3);
-  }
-  
-  .timeline-item .year {
-    font-weight: 700;
-    color: var(--kt-green);
-    margin-bottom: 0.5em;
-  }
-  
-  .timeline-item h4 {
-    margin-bottom: 0.5em;
-    color: #444;
-  }
-  
-  .timeline-item p {
-    color: #666;
-  }
-  
-  /* Responsive adjustments */
-  @media screen and (max-width: 980px) {
-    .about-title {
-      font-size: 5rem;
-    }
-    
-    header.major h2 {
-      font-size: 2.2em;
-    }
-  }
-  
-  @media screen and (max-width: 736px) {
-    .about #header-wrapper {
-      height: 60vh;
-    }
-    
-    .about-title {
-      font-size: 4rem;
-    }
-    
-    .about-content-wrapper {
-      padding: 2em 0;
-    }
-    
-    .team-member img {
-      max-width: 150px;
-    }
-    
-    .quote-section {
-      padding: 2em 1em;
-    }
-    
-    header.major h2 {
-      font-size: 2em;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .about #header-wrapper {
-      height: 50vh;
-    }
-    
-    .about-title {
-      font-size: 3rem;
-    }
-    
-    .about-intro {
-      font-size: 1em;
-    }
-    
-    .about-text {
-      font-size: 0.9em;
-    }
-    
-    .quote-section .quote {
-      font-size: 1.1em;
-    }
-    
-    .timeline {
-      padding-left: 1.5em;
-    }
-    
-    .timeline-item {
-      padding-left: 1em;
-    }
-    
-    .timeline-item:before {
-      left: -1.9em;
-    }
-    
-    header.major h2 {
-      font-size: 1.8em;
-    }
-  }
