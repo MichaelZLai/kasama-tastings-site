@@ -123,5 +123,547 @@
     text-shadow: 0 0 8px rgba(194, 163, 131, 0.6); /* Glowing effect */
   }
 
+/* ----- EVENTS MAIN CONTENT ----- */
+.events-main {
+  background-color: var(--light-bg);
+  padding: 6rem 0;
+  min-height: 60vh;
+}
 
+/* ----- EVENT TABS ----- */
+.event-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 2px solid var(--kt-green);
+  color: var(--kt-green);
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  min-width: 180px;
+}
+
+.tab-btn:hover {
+  background: var(--kt-litegreen);
+  border-color: var(--kt-litegreen);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.tab-btn.active {
+  background: var(--kt-green);
+  color: white;
+  border-color: var(--kt-green);
+}
+
+.tab-btn.active:hover {
+  background: #546956;
+  border-color: #546956;
+}
+
+/* ----- EVENTS GRID TOGGLE ----- */
+.events-grid {
+  display: none;
+  grid-template-columns: repeat(2, 1fr); /* Force exactly 2 columns */
+  gap: 3rem;
+  margin-bottom: 6rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  max-width: 1200px; /* Limit total width so cards don't get too wide */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6rem;
+}
+
+.events-grid.active {
+  display: grid;
+  animation: fadeInGrid 0.5s ease forwards;
+}
+
+@keyframes fadeInGrid {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----- PAST EVENT STYLING ----- */
+.event-card.past-event {
+  opacity: 0.9;
+  border: 1px solid #e0e0e0;
+}
+
+.event-card.past-event:hover {
+  opacity: 1;
+}
+
+.past-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 10;
+}
+
+.event-date-badge.past {
+  background: var(--kt-gray);
+  color: var(--dark-text);
+}
+
+/* ----- ADDITIONAL BUTTON STYLES ----- */
+
+/* Update existing event-btn styles for better spacing */
+.event-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.event-actions .event-btn {
+  flex: 1;
+  min-width: 0; /* Allows buttons to shrink if needed */
+}
+
+/* ----- EVENT CARDS ----- */
+.event-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Add this - makes all cards same height */
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Featured Event Card */
+.event-card.featured {
+  border: 3px solid var(--kt-gold);
+  transform: scale(1.02);
+}
+
+.event-card.featured:hover {
+  transform: scale(1.02) translateY(-8px);
+}
+
+/* Coming Soon Card */
+.event-card.coming-soon {
+  opacity: 0.8;
+}
+
+/* Event Image */
+.event-image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-image img {
+  transform: scale(1.05);
+}
+
+/* Date Badge */
+.event-date-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: var(--kt-green);
+  color: white;
+  padding: 0.8rem;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  min-width: 60px;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(110, 153, 109, 0.3);
+}
+
+.event-date-badge .month {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.event-date-badge .day {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 0.2rem;
+}
+
+/* Featured Badge */
+.featured-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--kt-gold);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 10;
+}
+
+/* Coming Soon Overlay */
+.coming-soon-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(110, 153, 109, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  z-index: 5;
+}
+
+.coming-soon-overlay h4 {
+  font-family: 'BrittanySignature', cursive;
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+  line-height: 1.1;
+}
+
+.coming-soon-overlay p {
+  font-size: 1rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Event Content */
+.event-content {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Add this - takes up remaining space */
+}
+
+.event-header {
+  margin-bottom: 1.5rem;
+}
+
+.event-header h3 {
+  font-size: 2rem;
+  font-weight:400;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.event-time,
+.event-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--kt-green);
+  font-weight: 500;
+}
+
+.event-time i,
+.event-location i {
+  width: 16px;
+  color: var(--kt-gold);
+}
+
+.event-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* Event Highlights */
+.event-highlights {
+  margin-bottom: 2.5rem;
+}
+
+.event-highlights h4 {
+  color: var(--kt-green);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.event-highlights ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.event-highlights li {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+/* Event Actions */
+.event-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto; /* Add this - pushes buttons to bottom */
+}
+
+.event-btn {
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  flex: 1;
+}
+
+.event-btn.primary {
+  background: var(--kt-green);
+  color: white;
+}
+
+.event-btn.primary:hover {
+  background: #546956;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(110, 153, 109, 0.3);
+}
+
+
+/* ----- NEWSLETTER SECTION ----- */
+.newsletter-section {
+  background: white;
+  padding: 4rem 3rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 4rem 0;
+}
+
+.newsletter-content h3 {
+  font-size: 2.5rem;
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+}
+
+.newsletter-content p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 600px; /* Constrain text width for better readability */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--kt-gray);
+  border-radius: 25px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.newsletter-form input:focus {
+  border-color: var(--kt-green);
+}
+
+.newsletter-btn {
+  background: var(--kt-green);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+  background: #546956;
+  transform: translateY(-2px);
+}
+
+/* ----- ANIMATIONS ----- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.event-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.event-card:nth-child(1) { animation-delay: 0s; }
+.event-card:nth-child(2) { animation-delay: 0.2s; }
+.event-card:nth-child(3) { animation-delay: 0.4s; }
+
+/* ----- RESPONSIVE DESIGN ----- */
+@media screen and (max-width: 1024px) {
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr); /* Keep 2 columns on tablets */
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .events-main {
+    padding: 4rem 0;
+  }
+
+  .event-tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .tab-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .events-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .event-actions {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+  
+  .event-content {
+    padding: 2rem;
+  }
+  
+  .event-header h3 {
+    font-size: 1.8rem;
+  }
+  
+  .section-title {
+    font-size: 2.8rem;
+  }
+  
+  .event-actions {
+    flex-direction: column;
+  }
+  
+  .event-meta {
+    gap: 0.3rem;
+  }
+  
+  .newsletter-section {
+    padding: 3rem 2rem;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .newsletter-content h3 {
+    font-size: 2rem;
+  }
+
+@media screen and (max-width: 480px) {
+  .events #header-wrapper {
+    height: 40vh;
+  }
+  
+  .event-content {
+    padding: 1.5rem;
+  }
+  
+  .event-header h3 {
+    font-size: 1.6rem;
+  }
+  
+  .events-main {
+    padding: 3rem 0;
+  }
+  
+  .newsletter-section {
+    padding: 2rem 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+}
 
