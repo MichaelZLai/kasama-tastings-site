@@ -418,39 +418,84 @@
   margin-bottom: 0;
 }
 
-/* ----- 5. Wine Decanter Section ----- */
-.decanter-section {
-  background-color: #f5f3f0; /* Light gray background */
-  padding: 5em 0;
+/* ----- 5. Decanter Product Sale Section ----- */
+.featured-product-section {
+  background-color: #f5f3f0;
+  padding: 4em 0;
 }
 
-.decanter-row {
-  display: flex;
-  align-items: center;
+/* Override row spacing for this section */
+.featured-product-section .row {
+  margin-top: 0;
+  margin-left: 0;
 }
 
-.decanter-content {
-  padding-right: 2em;
+.featured-product-section .row > * {
+  padding: 0 25px 0 25px;
+}
+
+.product-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
 }
 
-.decanter-content::before {
-  content: "⏰ LIMITED TIME ONLY!!";
-  display: block;
+.product-content h2 {
+  font-size: 2.8em;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.product-text {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  color: #555;
+}
+
+/* Product CTA Container */
+.product-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.shop-btn {
+  background: linear-gradient(45deg, #c9a961, #b8941f);
+  color: white;
+  border: none;
+  padding: 1.2rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(194, 163, 131, 0.4);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.shop-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(194, 163, 131, 0.5);
+  color: white;
+  border-bottom: none;
+}
+
+.limited-badge {
   background: linear-gradient(45deg, #e74c3c, #c0392b);
   color: white;
-  padding: 0.8rem 1.5rem;
+  padding: 0.5rem .5rem;
   border-radius: 25px;
-  font-size: 0.9rem;
+  font-size: 0.65rem;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 2rem;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+  letter-spacing: 0.5px;
   animation: pulse 2s infinite;
+  display:inline-block;
+  white-space: nowrap;
 }
 
 @keyframes pulse {
@@ -459,138 +504,54 @@
   100% { transform: scale(1); }
 }
 
-.decanter-content h2 {
-  font-size: 2.8em;
-  line-height: 1.1;
-  margin-bottom: 0.5em;
-  color: #333;
-}
-
-.decanter-text {
-  font-size: 1em;
-  line-height: 1.5;
-  margin-bottom: 1.5em;
-  color: #555;
-}
-
-/* Feature List Styling */
-.feature-list {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 2em;
-}
-
-.feature-list li {
-  background: white;
-  padding: 1rem 1.5rem;
-  margin-bottom: 1rem;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  font-size: 1.1rem;
-  border-left: 4px solid var(--kt-green);
-}
-
-.feature-list li:hover {
-  transform: translateX(5px);
-}
-
-/* Shop Now Button */
-.decanter-cta {
+/* Product Image */
+.product-image {
   display: flex;
-  margin-top: 1em;
+  justify-content: center;
+  align-items: center;
 }
 
-.shop-btn {
-  background: linear-gradient(45deg, var(--kt-gold), #b8941f);
-  color: white;
-  border: none;
-  padding: 1.2rem 3rem;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(194, 163, 131, 0.4);
-  text-transform: uppercase;
-  position: relative;
-  overflow: hidden;
-}
-
-.shop-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
+.product-image img {
   width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-  transition: left 0.6s;
-}
-
-.shop-btn:hover::before {
-  left: 100%;
-}
-
-.shop-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(194, 163, 131, 0.5);
-}
-
-/* Right Images Column */
-.decanter-image-grid {
-  display: flex;
-  gap: 1em;
-}
-
-.main-decanter-image {
-  width: 50%;
-}
-
-.side-decanter-images {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.side-decanter-image {
-  height: calc(50% - 0.5em);
-}
-
-.decanter-images img {
-  width: 100%;
-  height: 100%;
+  max-width: 450px;
+  height: 400px;
   object-fit: cover;
-  display: block;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 980px) {
-  .decanter-row {
+.product-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive adjustments using your existing breakpoints */
+@media screen and (max-width: 820px) {
+  .featured-product-section .row {
       flex-direction: column;
   }
   
-  .decanter-content {
-      padding-right: 0;
-      margin-bottom: 2em;
+  .product-content {
       text-align: center;
-      align-items: center;
+      margin-bottom: 2rem;
   }
   
-  .feature-list {
-      display: inline-block;
-      text-align: left;
-  }
-  
-  .decanter-cta {
+  .product-cta {
       justify-content: center;
   }
 }
 
 @media screen and (max-width: 736px) {
-  .decanter-content h2 {
-      font-size: 2.2em;
+  .product-content h2 {
+      font-size: 2.2rem;
+  }
+  
+  .product-cta {
+      flex-direction: column;
+      gap: 1rem;
+  }
+  
+  .featured-product-section {
+      padding: 3em 0;
   }
 }
-
