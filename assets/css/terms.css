@@ -1,0 +1,23 @@
+.definitions-list {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.terms-footer {
+    background-color: var(--kt-green);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.terms-footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+.terms-footer a:hover {
+    text-decoration: none;
+}
+  

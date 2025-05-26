@@ -42,22 +42,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 specialFeatures: 'Includes vintage champagne and rare sparklings not available in stores'
             }
         },
-        'sicily-uncorked': {
-            title: 'Sicily Uncorked: A Journey Through Island Wines',
-            price: '\$450 | 6 Guests\n2 - 2.5 hour\nexperience',
-            description: 'Explore the unique terroir of Sicily through indigenous grape varieties. Discover volcanic soils and Mediterranean influences in every glass from this ancient wine region.',
-            image: 'images/services-sicily.jpg',
+        'boisset-collection': {
+            title: 'Napa to Sonoma: A Journey Through The Boisset Collection',
+            price: '\$475 | 6 Guests\n2 - 2.5 hour\nexperience',
+            description: 'Experience the exceptional Boisset Collection. Journey from Napa Valley\'s legendary vineyards to Sonoma\'s diverse terroirs, discovering how French winemaking traditions blend with California innovation.',
+            image: 'images/services-boisset.jpg',
             details: {
                 included: [
-                    '5 authentic Sicilian wines from Mount Etna region',
-                    'Rare indigenous grape varieties (Nero d\'Avola, Grillo, Carricante)',
-                    'Volcanic terroir explanation and tasting notes',
-                    'Traditional Sicilian appetizers and olive oils',
-                    'Cultural stories and wine region history'
+                    'Sonoma County Pinot Noir and heritage varietals',
+                    'Detailed tasting notes and vineyard stories',
+                    'French winemaking technique explanations',
+                    'California terroir and climate discussion'
                 ],
-                perfectFor: 'Adventure seekers, Italy lovers, unique wine experiences',
-                duration: '2.5 hours of Mediterranean wine journey',
-                specialFeatures: 'Exclusive wines sourced directly from family vineyards in Sicily'
+                perfectFor: 'California wine enthusiasts, luxury wine lovers, those interested in French-California winemaking fusion',
+                duration: '2.5 hours of premium California wine exploration',
+                specialFeatures: 'Exclusive wines from historic estates including Raymond Vineyards and DeLoach Vineyards'
             }
         },
         'texas-vintages': {
@@ -146,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showModal(service) {
         // Determine the button text based on service type
-        const buttonText = service.title.includes('Custom Event') ? 'REQUEST QUOTE' : 'BOOK NOW';
+        const buttonText = service.title.includes('Custom Event') ? 'GET QUOTE' : 'BOOK NOW';
 
         const modalContent = `
             <div class="modal-left">
@@ -174,6 +173,19 @@ document.addEventListener('DOMContentLoaded', function() {
         modalBody.innerHTML = modalContent;
         modal.classList.add('show');
         document.body.style.overflow = 'hidden';
+
+        // Add event listener to the modal book button
+        const modalBookBtn = modal.querySelector('.modal-book-btn');
+        if (modalBookBtn) {
+            modalBookBtn.addEventListener('click', function() {
+                // Check if it's a GET quote or book now button
+                if (buttonText === 'GET QUOTE') {
+                    window.location.href = 'mailto:info@kasamatastings.com?subject=Custom Event Quote Request&body=Hi! I\'d like to request a quote for a custom wine tasting event.';
+                } else {
+                    window.location.href = 'kt-booktasting.html';
+                }
+            });
+        }
     }
 
     function closeModal() {
