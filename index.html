@@ -12,10 +12,31 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/header.css" />
 		<link rel="stylesheet" href="assets/css/home.css" />
+		<link rel="stylesheet" href="assets/css/popup.css" />
 		<link rel="icon" type="image/png" href="images/KT-favicon.png"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	</head>
 	<body class="homepage is-preload">
+		
+		<!-- Anniversary Popup -->
+		<div id="anniversary-popup" class="popup-overlay">
+			<div class="popup-content">
+				<button class="popup-close" onclick="closePopup()">&times;</button>
+				<div class="popup-header">
+					<h2 class="brittany">Happy 2 Years<br>Kasama Tastings!</h2>
+				</div>
+				<div class="popup-body">
+					<p class="popup-offer">TO CELEBRATE, WE ARE OFFERING 15% OFF ALL PRIVATE TASTING EXPERIENCES BOOKED IN JUNE*</p>
+					<p class="popup-code">USE CODE: <strong>BIRTHDAY15</strong></p>
+					<p class="popup-disclaimer">*valid for any private events in 2025</p>
+					<div class="popup-buttons">
+						<a href="kt-booktasting.html" class="popup-btn primary">Book Now</a>
+						<button onclick="closePopup()" class="popup-btn secondary">Maybe Later</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div id="page-wrapper">
 
 			<!-- 1. Hero Section -->
@@ -25,7 +46,7 @@
 						<!-- Navigation Bar -->
 							<nav id="nav">
 								<ul>
-									<li><a href="kt-home.html">HOME</a></li>
+									<li><a href="index.html">HOME</a></li>
 									<li><a href="kt-about.html">ABOUT US</a></li>
 									<li><a href="kt-services.html">SERVICES</a></li>
 									<li><a href="kt-products.html">PRODUCTS</a></li>
@@ -243,6 +264,7 @@
 			<script src="assets/js/main.js"></script>
 
 			<script src="assets/js/stickyheader.js"></script>
+			<script src="assets/js/popup.js"></script>
 
 	</body>
 </html>
