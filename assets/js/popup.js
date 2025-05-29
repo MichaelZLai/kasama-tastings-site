@@ -1,9 +1,23 @@
+// Basic Tracking for Analytics
+function trackPopupEvent(action) {
+    console.log('Popup Event:', action); // For debugging
+    
+    // Google Analytics (if you use it)
+    if (typeof gtag !== 'undefined') {
+        gtag('event', action, {
+            'event_category': 'Anniversary Popup',
+            'event_label': 'BIRTHDAY15 Promotion'
+        });
+    }
+}
+
 // Popup functionality
 function showPopup() {
     const popup = document.getElementById('anniversary-popup');
     if (popup) {
         popup.classList.add('show');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        trackPopupEvent('popup_shown'); // Track when shown
     }
 }
 
@@ -12,6 +26,7 @@ function closePopup() {
     if (popup) {
         popup.classList.remove('show');
         document.body.style.overflow = 'auto'; // Restore scrolling
+        trackPopupEvent('popup_closed'); // Track when closed
     }
 }
 
