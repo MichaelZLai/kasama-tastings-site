@@ -308,7 +308,7 @@
 .popular-card::before {
   content: "POPULAR";
   position: absolute;
-  bottom: 250px;
+  top: 15px;
   right: 15px;
   background: var(--kt-gold);
   color: white;

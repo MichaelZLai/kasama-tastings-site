@@ -59,6 +59,11 @@
   margin-bottom: 0;
 }
 
+.about-story .highlight {
+  font-weight: 700;
+  color: var(--kt-green);
+}
+
 /* ----- VALUES SECTION ----- */
 .values-section {
   margin-bottom: 6rem;
@@ -94,16 +99,21 @@
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
-.value-icon {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-}
-
 .value-card h4 {
   color: var(--kt-green);
   font-size: 1.4rem;
   margin-bottom: 1rem;
   font-weight: 600;
+}
+
+.value-card h4::after {
+  content: '';
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(135deg, var(--kt-green), var(--kt-gold));
+  display: block;
+  margin: 0.8rem auto 0;
+  border-radius: 1px;
 }
 
 .value-card p {

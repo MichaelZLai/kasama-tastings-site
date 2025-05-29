@@ -76,6 +76,42 @@
   }
 }
 
+/* ----- NO EVENTS STYLING ----- */
+.no-events-message {
+  grid-column: 1 / -1; /* Span full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  text-align: center;
+}
+
+.no-events-content {
+  background: white;
+  padding: 4rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.no-events-content i {
+  font-size: 4rem;
+  color: var(--kt-green);
+  margin-bottom: 1.5rem;
+}
+
+.no-events-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--dark-text);
+}
+
+.no-events-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
 /* ----- PAST EVENT STYLING ----- */
 .event-card.past-event {
   opacity: 0.9;

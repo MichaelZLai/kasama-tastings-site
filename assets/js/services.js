@@ -9,89 +9,83 @@ document.addEventListener('DOMContentLoaded', function() {
         'wine-fundamentals': {
             title: 'Wine Fundamentals: Discover your Palate',
             price: '\$400 | 6 Guests\n1 - 1.5 hour\nexperience',
-            description: 'Explore the essentials of wine with this beginner-friendly experience. Learn how to taste wine like a pro, uncover key flavor profiles, and discover the art of pairing wine with food. NA wine offering available.*',
+            description: 'Explore the essentials of wine with this beginner-friendly experience. Learn how to taste wine like a pro, uncover key flavor profiles, and discover the art of pairing wine with food. <br><br>NA wine offering available.*',
             image: 'images/services-fundamentals.jpg',
             details: {
                 included: [
-                    '5 carefully selected wines from different regions',
+                    '3 carefully selected wines from different regions',
                     'Professional sommelier guidance',
                     'Wine tasting notes and techniques',
                     'Cheese and charcuterie pairings',
                     'Take-home tasting journal'
                 ],
                 perfectFor: 'Wine newcomers, couples\' date night, small groups (2-6 people)',
-                duration: '2.5 hours of immersive wine education',
+                duration: '1.5 hours of immersive wine education',
                 location: 'In the comfort of your own home (Austin area) or our private tasting room'
             }
         },
         'sparkling-wine': {
             title: 'Sparkling Wine Masterclass: Sip, Learn, Sparkle',
-            price: '\$450 | 6 Guests\n2 - 2.5 hour\nexperience',
+            price: '\$450 | 6 Guests\n1 - 1.5 hour\nexperience',
             description: 'Dive into the world of bubbles! Explore Champagne, Prosecco, Cava, and more. Learn production methods and perfect food pairings with this effervescent experience.',
             image: 'images/services-sparkling.jpg',
             details: {
                 included: [
-                    '6 premium sparkling wines from around the world',
+                    '3 premium sparkling wines from around the world',
                     'Champagne vs. Prosecco vs. Cava comparison',
                     'Traditional vs. modern production methods',
-                    'Oyster and caviar pairings',
-                    'Proper champagne service and storage tips'
                 ],
-                perfectFor: 'Celebrations, sophisticated gatherings, champagne enthusiasts',
-                duration: '3 hours of effervescent education',
-                specialFeatures: 'Includes vintage champagne and rare sparklings not available in stores'
+                perfectFor: 'Celebrations, sophisticated gatherings, sparkling wine enthusiasts',
+                duration: '1.5 hours of effervescent education',
             }
         },
         'boisset-collection': {
             title: 'Napa to Sonoma: A Journey Through The Boisset Collection',
-            price: '\$475 | 6 Guests\n2 - 2.5 hour\nexperience',
+            price: '\$475 | 6 Guests\n1 - 1.5 hour\nexperience',
             description: 'Experience the exceptional Boisset Collection. Journey from Napa Valley\'s legendary vineyards to Sonoma\'s diverse terroirs, discovering how French winemaking traditions blend with California innovation.',
             image: 'images/services-boisset.jpg',
             details: {
                 included: [
-                    'Sonoma County Pinot Noir and heritage varietals',
-                    'Detailed tasting notes and vineyard stories',
-                    'French winemaking technique explanations',
-                    'California terroir and climate discussion'
+                    '3 - 4 wines from iconic destination wineries in Napa Valley and Sonoma County',
+                    'Presentation about French winemaking techniques and California\'s terroir',
+                    'Opportunity to purchase wines directly from the tasting',
+                    'Learn about the Boisset Wine Society membership'
                 ],
                 perfectFor: 'California wine enthusiasts, luxury wine lovers, those interested in French-California winemaking fusion',
-                duration: '2.5 hours of premium California wine exploration',
+                duration: '1.5 hours of premium California wine exploration',
                 specialFeatures: 'Exclusive wines from historic estates including Raymond Vineyards and DeLoach Vineyards'
             }
         },
         'texas-vintages': {
             title: 'Texas Vintages: Sip the Spirit of the Lone Star State',
-            price: '$430 | 6 Guests\n2 - 2.5 hour\nexperience',
+            price: '$430 | 6 Guests\n1 - 1.5 hour\nexperience',
             description: 'Discover the hidden gems of Texas wine country! From Hill Country to High Plains, explore award-winning local vineyards and taste the terroir of the Lone Star State.',
             image: 'images/services-texas.jpg',
             details: {
                 included: [
-                    '6 premium Texas wines from different regions',
+                    '3 premium Texas wines from different regions',
                     'Hill Country, High Plains, and Gulf Coast selections',
                     'Local vineyard stories and winemaker backgrounds',
-                    'Texas-style BBQ and local cheese pairings',
-                    'Map of Texas wine regions to plan your visits'
                 ],
                 perfectFor: 'Texas locals, newcomers to the state, supporting local businesses',
-                duration: '2.5 hours of Texas pride in every glass',
-                specialFeatures: 'Meet-the-winemaker virtual sessions and exclusive vineyard tour discounts'
+                duration: '1.5 hours of Texas pride in every glass',
             }
         },
         'non-alcoholic': {
             title: 'Elevated Sips: The Art of Non-Alcoholic Wines',
-            price: '$450 | 6 Guests\n2 - 2.5 hour\nexperience',
+            price: '$450 | 6 Guests\n1 - 1.5 hour\nexperience',
             description: 'Experience the sophistication of wine culture without the alcohol! Discover premium non-alcoholic wines that deliver complex flavors and elegant experiences for everyone.',
             image: 'images/services-nonalcohol.jpg',
             details: {
                 included: [
-                    '7 premium non-alcoholic wines from around the world',
+                    '3 premium non-alcoholic wines from around the world',
                     'Traditional dealcoholization method education',
                     'Sparkling, red, white, and rosé varieties',
                     'Sophisticated food pairings and appetizers',
                     'Guide to the best non-alcoholic wine brands'
                 ],
                 perfectFor: 'Pregnant women, designated drivers, sober curious, health-conscious individuals',
-                duration: '2.5 hours of inclusive wine appreciation',
+                duration: '1.5 hours of inclusive wine appreciation',
                 specialFeatures: 'Zero judgment, full sophistication - proving wine culture is for everyone'
             }
         },
