@@ -231,12 +231,32 @@
     margin-top: 2rem;
 }
 
-.shopify-buy__btn:hover {
+/* Make Shopify button match your primary green button style */
+.shopify-buy__btn,
+.shopify-buy__btn--cart-tab {
     background: var(--kt-green) !important;
     color: white !important;
-    border-color: var(--kt-green) !important;
+    border: 2px solid var(--kt-green) !important;
+    padding: 1rem 2.5rem !important;
+    border-radius: 30px !important;
+    font-weight: 900 !important;
+    font-size: 0.9rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    transition: all 0.3s ease !important;
+    font-family: inherit !important;
+    cursor: pointer !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.shopify-buy__btn:hover,
+.shopify-buy__btn--cart-tab:hover {
+    background: #546956 !important;
+    border-color: #546956 !important;
     transform: translateY(-2px) !important;
     box-shadow: 0 5px 15px rgba(110, 153, 109, 0.3) !important;
+    color: white !important;
 }
 
 /* Hide the original shop button when Shopify is loaded */
