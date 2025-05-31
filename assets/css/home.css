@@ -210,7 +210,7 @@
 
 /* ----- 3. Testimonials Section w/ Masonry Grid ----- */
 .testimonials-section {
-  padding: 5em 0;
+  padding-top: 5em;
 }
 
 .testimonials-header {
@@ -385,7 +385,120 @@
   }
 }
 
-/* ----- 4. Production Transition Section ----- */
+/* ----- 4. Press & Recognition Section ----- */
+.press-section {
+  /* background-color: #d9d9d9; */
+  background: 
+  radial-gradient(circle at 20% 80%, rgba(110, 153, 109, 0.1) 0%, transparent 50%),
+  radial-gradient(circle at 80% 20%, rgba(110, 153, 109, 0.05) 0%, transparent 50%),
+  linear-gradient(135deg, #f8fdf8 0%, #f0f7f0 100%);
+  padding: 60px 0;
+  margin-bottom: 0;
+}
+
+.press-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.press-header h2 {
+  font-size: 2.5rem;
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+}
+
+.press-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.press-item {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.press-item:hover {
+  transform: translateY(-5px);
+}
+
+.press-logo {
+  margin-bottom: 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.press-logo img {
+  max-height: 100%;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+.press-item h3 {
+  color: var(--kt-green);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.press-item p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.press-link {
+  color: var(--kt-green);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+
+.press-link:hover {
+  color: #546956;
+}
+
+/* ----- 5. Newsletter Section ----- */
+.newsletter-section-homepage{
+  margin-bottom: 0;
+}
+/* Style submit button to match your brand buttons */
+#fd-form-homepage-683a43a108dbbb76560b1774 button[type="submit"] {
+  background: var(--kt-green) !important;
+  color: white !important;
+  border: none !important;
+  padding: 15px 30px !important;
+  border-radius: 25px !important; /* Rounded edges like your other buttons */
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important; /* Smooth transition */
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin: 0.5rem !important;
+  box-shadow: none !important; /* Remove default shadow */
+}
+
+/* Hover effects matching your other buttons */
+#fd-form-homepage-683a43a108dbbb76560b1774 button[type="submit"]:hover {
+  background: #546956 !important; /* Darker green on hover */
+  box-shadow: 0 5px 15px rgba(110, 153, 109, 0.3) !important; /* Matching shadow */
+  color: white !important; /* Ensure text stays white */
+}
+#fd-form-homepage-683a43a108dbbb76560b1774 .ff-683a43a108dbbb76560b1774__footer{
+  margin-top: 0 !important;
+}
+/* ----- 6. Production Transition Section ----- */
 .product-transition {
   background: linear-gradient(135deg, var(--kt-green) 0%, var(--kt-litegreen) 50%, var(--kt-gold) 100%);
   color: white;
@@ -418,7 +531,7 @@
   margin-bottom: 0;
 }
 
-/* ----- 5. Decanter Product Sale Section ----- */
+/* ----- 7. Decanter Product Sale Section ----- */
 .featured-product-section {
   background-color: #f5f3f0;
   padding: 4em 0;

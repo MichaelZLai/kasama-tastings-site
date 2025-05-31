@@ -13,6 +13,28 @@
 		<link rel="stylesheet" href="assets/css/header.css" />
 		<link rel="stylesheet" href="assets/css/events.css" />
 		<link rel="icon" type="image/png" href="images/KT-favicon.png"/>
+		    <!-- Proper Flodesk Script -->
+			<script>
+				(function(w, d, t, h, s, n) {
+				  w.FlodeskObject = n;
+				  var fn = function() {
+					(w[n].q = w[n].q || []).push(arguments);
+				  };
+				  w[n] = w[n] || fn;
+				  var f = d.getElementsByTagName(t)[0];
+				  var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+				  var sm = d.createElement(t);
+				  sm.async = true;
+				  sm.type = 'module';
+				  sm.src = h + s + '.mjs' + v;
+				  f.parentNode.insertBefore(sm, f);
+				  var sn = d.createElement(t);
+				  sn.async = true;
+				  sn.noModule = true;
+				  sn.src = h + s + '.js' + v;
+				  f.parentNode.insertBefore(sn, f);
+				})(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+			  </script>
 	</head>
 	<body class="events is-preload">
 		<div id="page-wrapper">
@@ -237,14 +259,18 @@
 					<div class="container">
 						<!-- Newsletter Signup -->
 						<section class="newsletter-section">
-							<div class="newsletter-content">
-								<h3 class="brittany">Stay Updated on Events</h3>
-								<p>Be the first to know about new wine tasting events, special collaborations, and exclusive experiences.</p>
-								<form class="newsletter-form">
-									<input type="email" placeholder="Enter your email address" required>
-									<button type="submit" class="btn newsletter-btn">SUBSCRIBE</button>
-								</form>
-							</div>
+
+								<!-- Flodesk Form Container -->
+								<div class="flodesk-form-container">
+									<div id="fd-form-683a43a108dbbb76560b1774"></div>
+									<script>
+										window.fd('form', {
+											formId: '683a43a108dbbb76560b1774',
+											containerEl: '#fd-form-683a43a108dbbb76560b1774'
+										});
+									</script>
+								</div>
+								
 						</section>
 					</div>
 

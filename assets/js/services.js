@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'texas-vintages': {
             title: 'Texas Vintages: Sip the Spirit of the Lone Star State',
-            price: '$430 | 6 Guests\n1 - 1.5 hour\nexperience',
+            price: '$450 | 6 Guests\n1 - 1.5 hour\nexperience',
             description: 'Discover the hidden gems of Texas wine country! From Hill Country to High Plains, explore award-winning local vineyards and taste the terroir of the Lone Star State.',
             image: 'images/services-texas.jpg',
             details: {

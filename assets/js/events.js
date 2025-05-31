@@ -72,3 +72,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// ===== FLODESK Initialization =====
+    
+    // Initialize Flodesk form
+    function initializeFlodeskForm() {
+        // Wait for Flodesk to be available
+        if (typeof window.fd === 'function') {
+            fd('form', {
+                formId: '683a43a108dbbb76560b1774',
+                containerEl: '#fd-form-683a43a108dbbb76560b1774'
+            });
+            console.log('Flodesk form initialized');
+        } else {
+            // Retry if Flodesk isn't loaded yet
+            setTimeout(initializeFlodeskForm, 500);
+        }
+    }
+    
+    // Initialize Flodesk form
+    initializeFlodeskForm();
+    
+    

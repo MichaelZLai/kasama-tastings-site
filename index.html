@@ -15,6 +15,28 @@
 		<link rel="stylesheet" href="assets/css/popup.css" />
 		<link rel="icon" type="image/png" href="images/KT-favicon.png"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+			<!-- Flodesk Script -->
+			<script>
+				(function(w, d, t, h, s, n) {
+				w.FlodeskObject = n;
+				var fn = function() {
+					(w[n].q = w[n].q || []).push(arguments);
+				};
+				w[n] = w[n] || fn;
+				var f = d.getElementsByTagName(t)[0];
+				var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+				var sm = d.createElement(t);
+				sm.async = true;
+				sm.type = 'module';
+				sm.src = h + s + '.mjs' + v;
+				f.parentNode.insertBefore(sm, f);
+				var sn = d.createElement(t);
+				sn.async = true;
+				sn.noModule = true;
+				sn.src = h + s + '.js' + v;
+				f.parentNode.insertBefore(sn, f);
+				})(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+			</script>
 	</head>
 	<body class="homepage is-preload">
 		
@@ -169,7 +191,46 @@
 				</div>
 			</section>
 
-			<!-- 4. Production Transition Section -->
+			<!-- 4. Press & Recognition Section -->
+			<section class="press-section">
+				<div class="container">
+					<header class="press-header">
+						<h2 class="brittany">As Featured In</h2>
+					</header>
+					
+					<div class="press-grid">
+						<div class="press-item">
+							<div class="press-logo">
+								<img src="images/voyage-austin-logo.png" alt="Voyage Austin">
+							</div>
+							<a href="https://voyageaustin.com/interview/meet-kristine-viray-lai-of-kasama-tastings/" target="_blank" class="press-link">Read Full Article</a>
+						</div>
+						
+						<div class="press-item">
+							<div class="press-logo">
+								<img src="images/canvas-rebel-logo.png" alt="Canvas Rebel">
+							</div>
+							<a href="https://canvasrebel.com/meet-kristine-viray-lai/" target="_blank" class="press-link">Read Full Article</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- 5. Newsletter Section -->
+			<section class="newsletter-section-homepage">
+					<!-- Add Flodesk Script to Head -->
+					<div class="flodesk-form-container-home">
+						<div id="fd-form-homepage-683a43a108dbbb76560b1774"></div>
+						<script>
+							fd('form', {
+								formId: '683a43a108dbbb76560b1774',
+								containerEl: '#fd-form-homepage-683a43a108dbbb76560b1774'
+							});
+						</script>
+					</div>
+			</section>
+			
+			<!-- 6. Production Transition Section -->
 			<section class="product-transition">
 				<div class="container">
 					<h3 class="brittany">Enhance Your Wine Experience at Home</h3>
@@ -177,7 +238,7 @@
 				</div>
 			</section>
 
-			<!-- 5. Wine Decanter Feature Section -->
+			<!-- 7. Wine Decanter Feature Section -->
 			<div class="wrapper featured-product-section">
 				<div class="container">
 					<div class="row product-row">
