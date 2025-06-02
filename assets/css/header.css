@@ -130,18 +130,18 @@
   /* Mobile Header - Elegant Gold Gradient */
 @media screen and (max-width: 768px) {
   #header-wrapper {
-      background-image: 
-          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-          linear-gradient(135deg, #d4af37 0%, var(--kt-gold) 50%, #b8860b 100%);
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    linear-gradient(135deg, #8fb68a 0%, var(--kt-green) 50%, #4a6b49 100%);
       background-attachment: scroll;
   }
 }
 
 @media screen and (max-width: 480px) {
   #header-wrapper {
-      background-image: 
-          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-          linear-gradient(135deg, #d4af37 0%, var(--kt-gold) 50%, #b8860b 100%);
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    linear-gradient(135deg, #8fb68a 0%, var(--kt-green) 50%, #4a6b49 100%);
       background-attachment: scroll;
       height: 30vh;
   }
