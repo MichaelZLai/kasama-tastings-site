@@ -302,30 +302,46 @@
         padding: 2rem 0;
     }
     
-    .product-content {
-        grid-template-columns: 1fr;
+    /* Force ALL sections to use the same layout on mobile */
+    .product-content,
+    .product-section.reverse .product-content {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto !important;
     }
     
-    .product-section.reverse .product-text,
-    .product-section.reverse .product-image {
-        order: unset;
-    }
-    
+    /* Ensure consistent order for ALL sections */
     .product-text {
+        order: 1 !important;
+        order: unset !important;
         padding: 2.5rem 2rem;
-    }
-    
-    .product-title {
-        font-size: 2.5rem;
+        text-align: center;
     }
     
     .product-image-collage {
+        order: 2 !important;
+        order: unset !important;
         position: static;
         display: flex;
         flex-direction: column;
         gap: 1rem;
         padding: 1rem;
         min-height: auto;
+    }
+    
+    /* Override reverse layout completely on mobile */
+    .product-section.reverse .product-image-collage {
+        order: 2 !important;
+        order: unset !important;
+    }
+    
+    .product-section.reverse .product-text {
+        order: 1 !important;
+        order: unset !important;
+    }
+    
+    .product-title {
+        font-size: 2.5rem;
     }
     
     .image-container {
@@ -342,6 +358,11 @@
     
     .shopify-buy-container {
         margin-top: 1.5rem;
+        align-self: center;
+    }
+
+    .shop-btn{
+        align-self: center;
     }
 }
 

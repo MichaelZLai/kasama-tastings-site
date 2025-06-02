@@ -127,5 +127,25 @@
     text-shadow: 0 0 8px rgba(194, 163, 131, 0.6); /* Glowing effect */
   }
 
+  /* Mobile Header - Elegant Gold Gradient */
+@media screen and (max-width: 768px) {
+  #header-wrapper {
+      background-image: 
+          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          linear-gradient(135deg, #d4af37 0%, var(--kt-gold) 50%, #b8860b 100%);
+      background-attachment: scroll;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #header-wrapper {
+      background-image: 
+          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          linear-gradient(135deg, #d4af37 0%, var(--kt-gold) 50%, #b8860b 100%);
+      background-attachment: scroll;
+      height: 30vh;
+  }
+}
+
 
   
