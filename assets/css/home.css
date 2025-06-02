@@ -201,6 +201,10 @@
   .intro-content h2 {
       font-size: 2.2em;
   }
+
+  .intro-text {
+    text-align: center;
+  }
   
   .intro-buttons {
       flex-direction: column;
