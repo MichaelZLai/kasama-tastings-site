@@ -4,12 +4,154 @@
 		<title>Kasama Tastings - Products</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Kasama Tastings offers premium wine and non-alcoholic wine tasting experiences in your home. Private events, group tastings, and inclusive options available." />
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://assets.flodesk.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://assets.flodesk.com;">
-		<meta name="keywords" content="wine tasting, private wine tasting, non-alcoholic wine, home wine events, kasama tastings" />
-		<meta property="og:title" content="Kasama Tastings - Premium Wine Tasting Experiences" />
-		<meta property="og:description" content="Discover your wine palate with personalized tasting experiences." />
-		<meta property="og:image" content="images/logo.png" />
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; style-src 'self' https: 'unsafe-inline'; font-src 'self' https:; img-src 'self' https: data:; connect-src 'self' https:; frame-src https:;">
+
+		<meta name="description" content="Shop wine accessories and curated wine collections in Austin. Featured products include bottle-top wine aerators and handpicked wines from the Boisset Collection." />
+		<meta name="keywords" content="wine accessories Austin, wine aerator, wine decanter, bottle top aerator, Boisset Collection wines, curated wine selection Austin, wine products online" />
+
+		<!-- Location-based SEO -->
+		<meta name="geo.region" content="US-TX" />
+		<meta name="geo.placename" content="Austin" />
+		<meta name="geo.position" content="30.2672;-97.7431" />
+		<meta name="ICBM" content="30.2672, -97.7431" />
+
+		<!-- Author and Business Info -->
+		<meta name="author" content="Kasama Tastings" />
+		<meta name="robots" content="index, follow" />
+		<meta name="language" content="English" />
+
+		<!-- Enhanced Open Graph Tags -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Wine Accessories & Products Austin | Wine Aerator & Curated Wines" />
+		<meta property="og:description" content="Shop wine accessories and curated wine collections. Featured products include bottle-top wine aerators and handpicked wines from the Boisset Collection." />
+		<meta property="og:image" content="https://kasamatastings.com/images/decanter2.jpg" />
+		<meta property="og:url" content="https://kasamatastings.com/kt-products.html" />
+		<meta property="og:site_name" content="Kasama Tastings" />
+		<meta property="og:locale" content="en_US" />
+
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Wine Accessories & Products Austin | Wine Aerator" />
+		<meta name="twitter:description" content="Shop wine accessories and curated wine collections including bottle-top wine aerators and Boisset Collection wines." />
+		<meta name="twitter:image" content="https://kasamatastings.com/images/decanter2.jpg" />
+
+		<!-- Product Schema Markup - Wine Aerator -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Product",
+			"name": "Bottle Top Wine Aerator & Decanter",
+			"description": "Enhance every pour with this sleek, compact decanter that fits directly onto any standard wine bottle. It instantly aerates wine as you serve, boosting flavor and aroma—no waiting required.",
+			"brand": {
+				"@type": "Brand",
+				"name": "Kasama Tastings"
+			},
+			"image": [
+				"https://kasamatastings.com/images/decanter1.jpg",
+				"https://kasamatastings.com/images/decanter2.jpg",
+				"https://kasamatastings.com/images/decanter3.jpg"
+			],
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceCurrency": "USD",
+				"seller": {
+					"@type": "Organization",
+					"name": "Kasama Tastings"
+				}
+			},
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "5",
+				"reviewCount": "1"
+			},
+			"category": "Wine Accessories"
+		}
+		</script>
+
+		<!-- ItemList Schema for Product Catalog -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "ItemList",
+			"name": "Kasama Tastings Product Catalog",
+			"description": "Wine accessories and curated wine collections",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"item": {
+						"@type": "Product",
+						"name": "Bottle Top Wine Aerator & Decanter",
+						"url": "https://kasamatastings.com/kt-products.html#wine-aerator",
+						"image": "https://kasamatastings.com/images/decanter2.jpg"
+					}
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"item": {
+						"@type": "Product",
+						"name": "Boisset Collection Wines",
+						"url": "https://kasamatastings.com/kt-products.html#boisset-wines",
+						"image": "https://kasamatastings.com/images/boisset-wine1.jpg"
+					}
+				}
+			]
+		}
+		</script>
+
+		<!-- Local Business with Products -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Kasama Tastings",
+			"description": "Wine accessories and curated wine collections in Austin, Texas",
+			"url": "https://kasamatastings.com",
+			"telephone": "info@kasamatastings.com",
+			"email": "info@kasamatastings.com",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Austin",
+				"addressRegion": "TX",
+				"addressCountry": "US"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "30.2672",
+				"longitude": "-97.7431"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Austin"
+			},
+			"hasOfferCatalog": {
+				"@type": "OfferCatalog",
+				"name": "Wine Products",
+				"itemListElement": [
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Product",
+							"name": "Wine Aerator & Decanter"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Product",
+							"name": "Curated Wine Collection"
+						}
+					}
+				]
+			}
+		}
+		</script>
+
+		<!-- Canonical URL -->
+		<link rel="canonical" href="https://kasamatastings.com/kt-products.html" />
+
 		<link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="assets/css/header.css" />
 		<link rel="stylesheet" href="assets/css/products.css" />

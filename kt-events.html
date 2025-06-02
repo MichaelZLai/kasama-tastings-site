@@ -4,38 +4,97 @@
 		<title>Kasama Tastings - Events</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Kasama Tastings offers premium wine and non-alcoholic wine tasting experiences in your home. Private events, group tastings, and inclusive options available." />
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://assets.flodesk.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://assets.flodesk.com;">
-		<meta name="keywords" content="wine tasting, private wine tasting, non-alcoholic wine, home wine events, kasama tastings" />
-		<meta property="og:title" content="Kasama Tastings - Premium Wine Tasting Experiences" />
-		<meta property="og:description" content="Discover your wine palate with personalized tasting experiences." />
-		<meta property="og:image" content="images/logo.png" />
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; style-src 'self' https: 'unsafe-inline'; font-src 'self' https:; img-src 'self' https: data:; connect-src 'self' https:; frame-src https:;">
+
+		<meta name="description" content="Join public wine tasting events in Austin hosted by certified sommelier Kristine Viray Lai. Past events include non-alcoholic tastings, wine & chocolate pairings, and seasonal celebrations." />
+		<meta name="keywords" content="wine events Austin, public wine tasting Austin, wine tasting calendar Austin, wine events near me, Austin wine calendar, sommelier events Austin, non-alcoholic wine events" />
+
+		<!-- Location-based SEO -->
+		<meta name="geo.region" content="US-TX" />
+		<meta name="geo.placename" content="Austin" />
+		<meta name="geo.position" content="30.2672;-97.7431" />
+		<meta name="ICBM" content="30.2672, -97.7431" />
+
+		<!-- Author and Business Info -->
+		<meta name="author" content="Kasama Tastings" />
+		<meta name="robots" content="index, follow" />
+		<meta name="language" content="English" />
+
+		<!-- Enhanced Open Graph Tags -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Wine Tasting Events Austin | Public Wine Events | Kasama Tastings" />
+		<meta property="og:description" content="Join public wine tasting events in Austin hosted by certified sommelier. Past events include non-alcoholic tastings and wine & chocolate pairings." />
+		<meta property="og:image" content="https://kasamatastings.com/images/events-59.png" />
+		<meta property="og:url" content="https://kasamatastings.com/kt-events.html" />
+		<meta property="og:site_name" content="Kasama Tastings" />
+		<meta property="og:locale" content="en_US" />
+
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Wine Tasting Events Austin | Public Wine Events" />
+		<meta name="twitter:description" content="Join public wine tasting events in Austin hosted by certified sommelier. Past events include non-alcoholic tastings and wine pairings." />
+		<meta name="twitter:image" content="https://kasamatastings.com/images/events-59.png" />
+
+		<!-- Events Schema Markup -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "EventSeries",
+				"name": "Kasama Tastings Wine Events",
+				"description": "Public wine tasting events in Austin, Texas featuring both alcoholic and non-alcoholic wine experiences",
+				"organizer": {
+					"@type": "LocalBusiness",
+					"name": "Kasama Tastings",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Austin",
+						"addressRegion": "TX",
+						"addressCountry": "US"
+					}
+				},
+				"location": {
+					"@type": "Place",
+					"name": "Austin, Texas",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Austin",
+						"addressRegion": "TX",
+						"addressCountry": "US"
+					}
+				},
+				"url": "https://kasamatastings.com/kt-events.html"
+			}
+			</script>
+
+		<!-- Canonical URL -->
+		<link rel="canonical" href="https://kasamatastings.com/kt-events.html" />
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/header.css" />
 		<link rel="stylesheet" href="assets/css/events.css" />
 		<link rel="icon" type="image/png" href="images/KT-favicon.png"/>
-		    <!-- Proper Flodesk Script -->
-			<script>
-				(function(w, d, t, h, s, n) {
-				  w.FlodeskObject = n;
-				  var fn = function() {
-					(w[n].q = w[n].q || []).push(arguments);
-				  };
-				  w[n] = w[n] || fn;
-				  var f = d.getElementsByTagName(t)[0];
-				  var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
-				  var sm = d.createElement(t);
-				  sm.async = true;
-				  sm.type = 'module';
-				  sm.src = h + s + '.mjs' + v;
-				  f.parentNode.insertBefore(sm, f);
-				  var sn = d.createElement(t);
-				  sn.async = true;
-				  sn.noModule = true;
-				  sn.src = h + s + '.js' + v;
-				  f.parentNode.insertBefore(sn, f);
-				})(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
-			  </script>
+		<!-- Proper Flodesk Script -->
+		<script>
+			(function(w, d, t, h, s, n) {
+				w.FlodeskObject = n;
+				var fn = function() {
+				(w[n].q = w[n].q || []).push(arguments);
+				};
+				w[n] = w[n] || fn;
+				var f = d.getElementsByTagName(t)[0];
+				var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+				var sm = d.createElement(t);
+				sm.async = true;
+				sm.type = 'module';
+				sm.src = h + s + '.mjs' + v;
+				f.parentNode.insertBefore(sm, f);
+				var sn = d.createElement(t);
+				sn.async = true;
+				sn.noModule = true;
+				sn.src = h + s + '.js' + v;
+				f.parentNode.insertBefore(sn, f);
+			})(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+			</script>
 	</head>
 	<body class="events is-preload">
 		<div id="page-wrapper">
