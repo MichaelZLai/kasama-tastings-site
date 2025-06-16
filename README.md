@@ -16,7 +16,7 @@ This is the official website for Kasama Tastings, a local Austin business offeri
 ## Key Features
 
 ### SEO & Analytics
-- Google Analytics 4 integration (GA4-G3SZQKWL3V)
+- Google Analytics 4 integration
 - Comprehensive SEO meta tags
 - Local business schema markup
 - Open Graph and Twitter Card tags
