@@ -65,6 +65,32 @@
   animation: fadeInGrid 0.5s ease forwards;
 }
 
+/* ----- SINGLE EVENT CENTERING ----- */
+.events-grid:has(.event-card:only-child) {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  max-width: 600px; /* Limit width so single card doesn't get too wide */
+}
+
+.events-grid:has(.event-card:only-child) .event-card {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Fallback for browsers that don't support :has() */
+@supports not selector(:has(*)) {
+  .events-grid.single-event {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      max-width: 600px;
+  }
+  
+  .events-grid.single-event .event-card {
+      max-width: 100%;
+      width: 100%;
+  }
+}
+
 @keyframes fadeInGrid {
   from {
     opacity: 0;
