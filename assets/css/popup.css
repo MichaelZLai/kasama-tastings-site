@@ -1,3 +1,33 @@
+.popup-body {
+    text-align: left;
+    font-size: .8em;
+    line-height: 1.7;
+
+}
+
+.popup-body strong {
+    color: #6e996d;
+    font-weight: 700;
+}
+
+.popup-greeting {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #555;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.popup-signature {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
 /* Popup Styles */
 .popup-overlay {
     position: fixed;

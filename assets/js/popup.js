@@ -5,7 +5,7 @@ function trackPopupEvent(action) {
     // Google Analytics (if you use it)
     if (typeof gtag !== 'undefined') {
         gtag('event', action, {
-            'event_category': 'Anniversary Popup',
+            'event_category': 'Maternity Popup',
             'event_label': 'BIRTHDAY15 Promotion'
         });
     }
@@ -13,7 +13,7 @@ function trackPopupEvent(action) {
 
 // Popup functionality
 function showPopup() {
-    const popup = document.getElementById('anniversary-popup');
+    const popup = document.getElementById('maternity-popup');
     if (popup) {
         popup.classList.add('show');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
@@ -22,7 +22,7 @@ function showPopup() {
 }
 
 function closePopup() {
-    const popup = document.getElementById('anniversary-popup');
+    const popup = document.getElementById('maternity-popup');
     if (popup) {
         popup.classList.remove('show');
         document.body.style.overflow = 'auto'; // Restore scrolling
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Close popup when clicking outside of it
 document.addEventListener('click', function(event) {
-    const popup = document.getElementById('anniversary-popup');
+    const popup = document.getElementById('maternity-popup');
     const popupContent = document.querySelector('.popup-content');
     
     if (event.target === popup && !popupContent.contains(event.target)) {
