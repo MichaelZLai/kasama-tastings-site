@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const serviceData = {
         'wine-fundamentals': {
             title: 'Wine Fundamentals: Discover your Palate',
-            price: '\$400 | 6 Guests\n1 - 1.5 hour\nexperience',
+            price: '\$400 | 6 Guests\n90-Minute Guided Tasting Experience',
             description: 'Explore the essentials of wine with this beginner-friendly experience. Learn how to taste wine like a pro, uncover key flavor profiles, and discover the art of pairing wine with food. <br><br>NA wine offering available.*',
             image: 'images/services-fundamentals.jpg',
             details: {
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'sparkling-wine': {
             title: 'Sparkling Wine Masterclass: Sip, Learn, Sparkle',
-            price: '\$450 | 6 Guests\n1 - 1.5 hour\nexperience',
+            price: '\$450 | 6 Guests\n90-Minute Guided Tasting Experience',
             description: 'Dive into the world of bubbles! Explore Champagne, Prosecco, Cava, and more. Learn production methods and perfect food pairings with this effervescent experience.',
             image: 'images/services-sparkling.jpg',
             details: {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'texas-vintages': {
             title: 'Texas Vintages: Sip the Spirit of the Lone Star State',
-            price: '$450 | 6 Guests\n1 - 1.5 hour\nexperience',
+            price: '$450 | 6 Guests\n90-Minute Guided Tasting Experience',
             description: 'Discover the hidden gems of Texas wine country! From Hill Country to High Plains, explore award-winning local vineyards and taste the terroir of the Lone Star State.',
             image: 'images/services-texas.jpg',
             details: {
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'non-alcoholic': {
             title: 'Elevated Sips: The Art of Non-Alcoholic Wines',
-            price: '$450 | 6 Guests\n1 - 1.5 hour\nexperience',
+            price: '$450 | 6 Guests\n90-Minute Guided Tasting Experience',
             description: 'Experience the sophistication of wine culture without the alcohol! Discover premium non-alcoholic wines that deliver complex flavors and elegant experiences for everyone.',
             image: 'images/services-nonalcohol.jpg',
             details: {
