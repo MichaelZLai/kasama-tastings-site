@@ -39,21 +39,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 duration: '1.5 hours of effervescent education',
             }
         },
-        'boisset-collection': {
-            title: 'Napa to Sonoma: A Journey Through The Boisset Collection',
-            price: '\$475 | 6 Guests\n1 - 1.5 hour\nexperience',
-            description: 'Experience the exceptional Boisset Collection. Journey from Napa Valley\'s legendary vineyards to Sonoma\'s diverse terroirs, discovering how French winemaking traditions blend with California innovation.',
+        'dot-wine': {
+            title: "Roots & Vines: Tasting Sonoma's Dot Wine",
+            price: '\$475 | 6 Guests\n90-Minute Guided Tasting Experience',
+            description: 'Explore the story and wines of Dot Wine, a boutique Sonoma County winery co-founded by award-winning viticulturist Lise Asimont. Taste exclusive small-batch wines while discovering the philosophy, craftsmanship, and community behind this proudly Filipina-American and LGBTQIA+-owned brand.',
             image: 'images/services-boisset.jpg',
             details: {
                 included: [
-                    '3 - 4 wines from iconic destination wineries in Napa Valley and Sonoma County',
-                    'Presentation about French winemaking techniques and California\'s terroir',
-                    'Opportunity to purchase wines directly from the tasting',
-                    'Learn about the Boisset Wine Society membership'
+                    '3 hand-selected, small-batch wines from Dot Wine\'s premium Sonoma portfolio',
+                    'Insights into Sonoma vineyards and sustainable winemaking',
+                    'Stories behind the winery, founder, and wines',
                 ],
-                perfectFor: 'California wine enthusiasts, luxury wine lovers, those interested in French-California winemaking fusion',
+                perfectFor: 'Boutique wine lovers, Sonoma enthusiasts, wine explorers, couples nights, and small gatherings',
                 duration: '1.5 hours of premium California wine exploration',
-                specialFeatures: 'Exclusive wines from historic estates including Raymond Vineyards and DeLoach Vineyards'
+                specialFeatures: 'Featuring a proudly Filipina-American and LGBTQIA+-owned Sonoma wine brand'
             }
         },
         'texas-vintages': {

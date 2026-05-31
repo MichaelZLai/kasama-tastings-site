@@ -288,6 +288,27 @@
   z-index: 10;
 }
 
+/* New Card Badge */
+.new-card {
+  position: relative;
+}
+
+.new-card::before {
+  content: "NEW!";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--kt-green);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 10;
+}
+
 
 
 /* ----- MODAL STYLES ----- */
