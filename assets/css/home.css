@@ -323,8 +323,7 @@
 }
 
 .press-divider-title h2 {
-  font-family: 'Montserrat';
-  src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxC7m0dR9pBOi.woff2) format('woff2');
+  /* font-family: 'Cormorant Garamond', Georgia, serif; */
   font-size: clamp(2.8rem, 4vw, 4rem);
   line-height: 1;
   color: #2f5f34;

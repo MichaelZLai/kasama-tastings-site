@@ -5,9 +5,19 @@
   min-height: 60vh;
 }
 
-/* ----- ABOUT HERO SECTION ----- */
+/* ----- Founder SECTION ----- */
 .about-hero {
   margin-bottom: 6rem;
+}
+
+.about-page-heading p,
+.about-eyebrow,
+.values-eyebrow {
+  color: var(--kt-green);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 800;
+  font-size: 0.85rem;
 }
 
 .about-content {
@@ -59,102 +69,176 @@
   margin-bottom: 0;
 }
 
-.about-story .highlight {
+.highlight {
   font-weight: 700;
-  color: var(--kt-green);
+  color: var(--kt-green) !important;
 }
 
 /* ----- VALUES SECTION ----- */
 .values-section {
-  margin-bottom: 6rem;
+  margin: 5rem auto 5rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(63, 107, 55, 0.18);
   text-align: center;
 }
 
-.section-title {
-  font-size: 3rem;
-  color: var(--dark-text);
-  margin-bottom: 3rem;
-  text-align: center;
+.values-heading {
+  margin-bottom: 1.75rem;
+}
+
+.values-eyebrow {
+  color: var(--kt-green);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 800;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.values-heading h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.5rem, 4.5vw, 4rem);
+  line-height: 1;
+  color: #222;
+  margin: 0;
+  font-weight: 500;
 }
 
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  max-width: 1000px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .value-card {
-  background: white;
-  padding: 3rem 2rem;
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(63, 107, 55, 0.14);
+  padding: 2.4rem 1.6rem;
+  border-radius: 18px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.055);
   transition: all 0.3s ease;
 }
 
 .value-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 46px rgba(0, 0, 0, 0.08);
+}
+
+.value-card i {
+  color: var(--kt-green);
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .value-card h4 {
-  color: var(--kt-green);
-  font-size: 1.4rem;
+  color: #222;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.55rem;
+  line-height: 1.1;
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 .value-card h4::after {
   content: '';
-  width: 100px;
+  width: 42px;
   height: 2px;
-  background: linear-gradient(135deg, var(--kt-green), var(--kt-gold));
+  background: var(--kt-gold);
   display: block;
-  margin: 0.8rem auto 0;
+  margin: 0.9rem auto 0;
   border-radius: 1px;
 }
 
 .value-card p {
-  color: #666;
-  line-height: 1.6;
-  font-size: 1rem;
+  color: #555;
+  line-height: 1.55;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 980px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .values-section {
+    margin: 4rem auto;
+    padding-top: 2.5rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card {
+    padding: 2rem 1.4rem;
+  }
 }
 
 /* ----- CLOSING QUOTE SECTION ----- */
 .closing-quote-section {
-  margin: 4rem 0 2rem 0;
+  margin: 4.5rem 0 2rem;
   text-align: center;
 }
 
 .quote-content blockquote {
-  background: white;
-  padding: 3rem 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
+  padding: 4.25rem 3rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f8fdf8 0%, #ffffff 70%);
+  border: 1px solid rgba(63, 107, 55, 0.14);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.055);
+}
+
+.quote-mark {
+  color: var(--kt-gold);
+  font-family: Georgia, serif;
+  font-size: 4.5rem;
+  line-height: 1;
+  margin-bottom: -0.5rem;
 }
 
 .quote-content blockquote p {
-  font-size: 1.3rem;
-  line-height: 1.6;
-  color: var(--dark-text);
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.65rem, 3vw, 2.2rem);
+  line-height: 1.35;
+  color: #333;
   font-style: italic;
-  margin: 0;
 }
 
-/* Optional: Add quotation marks */
-.quote-content blockquote::before {
-  content: '"';
-  font-size: 4rem;
-  color: var(--kt-gold);
-  position: absolute;
-  top: -10px;
-  left: 20px;
-  font-family: serif;
+.quote-content cite {
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin-top: 1.5rem;
+  color: var(--kt-green);
+  font-style: normal;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .quote-content blockquote {
+    padding: 3.25rem 1.75rem;
+  }
+
+  .quote-fern {
+    width: 120px;
+    left: 0.75rem;
+  }
 }
 
 
