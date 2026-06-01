@@ -57,8 +57,9 @@
 }
 
 .experience-hero h1 {
-  font-size: clamp(3.25rem, 4.8vw, 5.2rem);
-  line-height: 1.3;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.25rem, 3.8vw, 3rem);
+  line-height: 1;
   letter-spacing: -0.04em;
   margin-bottom: 24px;
 }
@@ -322,7 +323,9 @@
 }
 
 .press-divider-title h2 {
-  font-size: clamp(2.8rem, 5vw, 4.3rem);
+  font-family: 'Montserrat';
+  src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRxC7m0dR9pBOi.woff2) format('woff2');
+  font-size: clamp(2.8rem, 4vw, 4rem);
   line-height: 1;
   color: #2f5f34;
   margin: 0;
@@ -418,7 +421,8 @@
 }
 
 .testimonials-header h2 {
-  font-size: clamp(3.2rem, 5vw, 5rem);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.2rem, 4vw, 4rem);
   line-height: 1;
   margin-bottom: 1.5rem;
   color: #222;

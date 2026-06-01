@@ -197,103 +197,205 @@
 
 			<!-- Main Services Content -->
 			<main class="services-main">
+				<!-- Services Intro -->
+				<section class="services-intro">
+					<div class="container">
+					  <p class="services-eyebrow">Private Tastings in Austin</p>
+					  <h1>Choose Your Experience</h1>
+					  <p class="services-intro-copy">
+						From beginner-friendly wine education to Sonoma features, sparkling wines,
+						Texas bottles, and inclusive non-alcoholic tastings, each experience is
+						curated, guided, and brought directly to you.
+					  </p>
+					</div>
+				  </section>
+				
+				  <!-- Experience Finder -->
+				<section class="experience-finder">
+					<div class="container">
+					<div class="finder-card">
+						<div class="finder-title">
+						<span></span>
+						<h2>Which tasting is right for you?</h2>
+						<span></span>
+						</div>
+
+						<div class="finder-options">
+						<a href="#wine-fundamentals" class="finder-option">
+							<i class="fa-solid fa-champagne-glasses"></i>
+							<strong>New to wine?</strong>
+							<span>Wine Fundamentals</span>
+						</a>
+
+						<a href="#sparkling-wine" class="finder-option">
+							<i class="fa-solid fa-wine-glass"></i>
+							<strong>Love bubbles?</strong>
+							<span>Sparkling Masterclass</span>
+						</a>
+
+						<a href="#dot-wine" class="finder-option">
+							<i class="fa-solid fa-wine-bottle"></i>
+							<strong>Something unique?</strong>
+							<span>Roots & Vines</span>
+						</a>
+
+						<a href="#custom-event" class="finder-option">
+							<i class="fa-solid fa-users"></i>
+							<strong>Planning a party?</strong>
+							<span>Custom Event</span>
+						</a>
+
+						<a href="#non-alcoholic" class="finder-option">
+							<i class="fa-solid fa-seedling"></i>
+							<strong>Prefer alcohol-free?</strong>
+							<span>Elevated Sips</span>
+						</a>
+						</div>
+					</div>
+					</div>
+				</section>
+
+				<!-- Included Section -->
+				<section class="included-section">
+					<div class="container">
+					<div class="included-title">
+						<span></span>
+						<h2>Every tasting includes:</h2>
+						<span></span>
+					</div>
+
+					<div class="included-grid">
+						<div class="included-item">
+							<i class="fa-solid fa-award"></i>
+							<span>Curated Wines</span>
+						</div>
+						<div class="included-item">
+							<i class="fa-solid fa-user-check"></i>
+							<span>Certified Sommelier Guidance</span>
+						</div>
+						<div class="included-item">
+							<i class="fa-solid fa-wine-glass-empty"></i>
+							<span>Glassware</span>
+						</div>
+						<div class="included-item">
+							<i class="fa-solid fa-bell-concierge"></i>
+							<span>Food Pairing Recommendations</span>
+						</div>
+						<div class="included-item">
+							<i class="fa-solid fa-clipboard-list"></i>
+							<span>Tasting Notes</span>
+						</div>
+						<div class="included-item">
+							<i class="fa-solid fa-star"></i>
+							<span>Setup & Cleanup</span>
+						</div>
+					</div>
+					</div>
+				</section>
+
 				<div class="container">
 					<!-- Services Grid -->
 					<div class="services-grid">
 						
 						<!-- Service 1: Wine Fundamentals -->
-						<div class="service-card popular-card">
+						<div class="service-card popular-card" id="wine-fundamentals">
 							<div class="service-image">
-								<img src="images/services-fundamentals.jpg" alt="Wine tasting with chocolate pairings" />
+							  <img src="images/services-fundamentals.jpg" alt="Wine tasting with chocolate pairings" />
 							</div>
 							<div class="service-content">
-								<div class="service-header">
-									<h3>Wine Fundamentals: Discover Your Palate</h3>
-								</div>
-								<div class="service-actions">
-									<a href="kt-booktasting.html" class="btn book-btn">BOOK NOW</a>
-									<button class="btn learn-btn" data-service="wine-fundamentals">LEARN MORE</button>
-								</div>
+							  <h3>Wine Fundamentals: Discover Your Palate</h3>
+							  <p>A beginner-friendly tasting designed to help you explore, learn, and discover what you love.</p>
+							  <p class="service-price">From $400</p>
+				  
+							  <div class="service-actions">
+								<a href="kt-booktasting.html" class="btn book-btn">BOOK NOW</a>
+								<button class="btn learn-btn" data-service="wine-fundamentals">LEARN MORE</button>
+							  </div>
 							</div>
-						</div>
+						  </div>
 
 						<!-- Service 2: Dot Wine -->
-						<div class="service-card new-card">
+						<div class="service-card new-card" id="dot-wine">
 							<div class="service-image">
-								<img src="images/services-boisset.jpg" alt="Woman enjoying Dot wine tasting" />
+							  <img src="images/services-boisset.jpg" alt="Woman enjoying Dot wine tasting" />
 							</div>
 							<div class="service-content">
-								<div class="service-header">
-									<h3>Roots & Vines: Tasting Sonoma's Dot Wine</h3>
-								</div>
-								<div class="service-actions">
-									<a href="kt-booktasting.html" class="btn book-btn">BOOK NOW</a>
-									<button class="btn learn-btn" data-service="dot-wine">LEARN MORE</button>
-								</div>
+							  <h3>Roots & Vines: Tasting Sonoma's Dot Wine</h3>
+							  <p>Explore small-production Sonoma wines from passionate producers with stories behind each pour.</p> 
+							  <p class="service-price">From $475</p>
+				  
+							  <div class="service-actions">
+								<a href="kt-booktasting.html" class="btn book-btn">BOOK NOW</a>
+								<button class="btn learn-btn" data-service="dot-wine">LEARN MORE</button>
+							  </div>
 							</div>
-						</div>
+						  </div>
 
 						<!-- Service 3: Sparkling Wine Masterclass -->
-						<div class="service-card">
+						<div class="service-card" id="sparkling-wine">
 							<div class="service-image">
-								<img src="images/services-sparkling.jpg" alt="Hand holding glass of sparkling wine" />
+							  <img src="images/services-sparkling.jpg" alt="Hand holding glass of sparkling wine" />
 							</div>
 							<div class="service-content">
-								<div class="service-header">
-									<h3>Sparkling Wine Masterclass: Sip, Learn, Sparkle</h3>
-								</div>
-								<div class="service-actions">
-									<a href="kt-booktasting.html" class="btn book-btn">BOOK NOW</a>
-									<button class="btn learn-btn" data-service="sparkling-wine">LEARN MORE</button>
-								</div>
+							  <h3>Sparkling Wine Masterclass: Sip, Learn, Sparkle</h3>
+							  <p>Discover the world of sparkling wines, from méthode champenoise to Prosecco and beyond.</p>
+							  <p class="service-price">From $450</p>
+				  
+							  <div class="service-actions">
+								<a href="kt-booktasting.html" class="btn book-btn">BOOK NOW</a>
+								<button class="btn learn-btn" data-service="sparkling-wine">LEARN MORE</button>
+							  </div>
 							</div>
-						</div>
+						  </div>
 
 						<!-- Service 4: Texas Vintages -->
-						<div class="service-card">
+						<div class="service-card" id="texas-vintages">
 							<div class="service-image">
-								<img src="images/services-texas.jpg" alt="Texas wine tasting" />
+							  <img src="images/services-texas.jpg" alt="Texas wine tasting" />
 							</div>
 							<div class="service-content">
-								<div class="service-header">
-									<h3>Texas Vintages: Sip the Spirit of the Lone Star State</h3>
-								</div>
-								<div class="service-actions">
-									<a href="kt-booktasting.html" class="btn book-btn">BOOK NOW</a>
-									<button class="btn learn-btn" data-service="texas-vintages">LEARN MORE</button>
-								</div>
+							  <h3>Texas Vintages: Sip the Spirit of the Lone Star State</h3>
+							  <p>Celebrate Texas winemakers and discover bold, local flavors from across the state.</p>
+							  <p class="service-price">From $450</p>
+				  
+							  <div class="service-actions">
+								<a href="kt-booktasting.html" class="btn book-btn">BOOK NOW</a>
+								<button class="btn learn-btn" data-service="texas-vintages">LEARN MORE</button>
+							  </div>
 							</div>
-						</div>
+						  </div>
 
 						<!-- Service 5: Non-Alcoholic Wines -->
-						<div class="service-card">
+						<div class="service-card" id="non-alcoholic">
 							<div class="service-image">
-								<img src="images/services-nonalcohol.jpg" alt="Non-alcoholic wine tasting" />
+							  <img src="images/services-nonalcohol.jpg" alt="Non-alcoholic wine tasting" />
 							</div>
 							<div class="service-content">
-								<div class="service-header">
-									<h3>Elevated Sips: The Art of Non-Alcoholic Wines</h3>
-								</div>
-								<div class="service-actions">
-									<a href="kt-booktasting.html" class="btn book-btn">BOOK NOW</a>
-									<button class="btn learn-btn" data-service="non-alcoholic">LEARN MORE</button>
-								</div>
+							  <h3>Elevated Sips: The Art of Non-Alcoholic Wines</h3>
+							  <p>Curated non-alcoholic wines and spirits for a sophisticated, inclusive sip.</p>
+							  <p class="service-price">From $450</p>
+				  
+							  <div class="service-actions">
+								<a href="kt-booktasting.html" class="btn book-btn">BOOK NOW</a>
+								<button class="btn learn-btn" data-service="non-alcoholic">LEARN MORE</button>
+							  </div>
 							</div>
-						</div>
+						  </div>
 
 						<!-- Service 6: Custom Event -->
-						<div class="service-card">
+						<div class="service-card" id="custom-event">
 							<div class="service-image">
-								<img src="images/services-custom.jpg" alt="Custom wine event" />
+							  <img src="images/services-custom.jpg" alt="Custom wine event" />
 							</div>
 							<div class="service-content">
-								<div class="service-header">
-									<h3>Custom Event</h3>
-								</div>
-								<div class="service-actions">
-									<a href="mailto:info@kasamatastings.com?subject=Custom Event Quote Request&body=Hi! I'd like to request a quote for a custom wine tasting event." class="btn book-btn">GET QUOTE</a>
-									<button class="btn learn-btn" data-service="custom-event">LEARN MORE</button>
-								</div>
+							  <h3>Custom Tasting Experience</h3>
+							  <p>Have something specific in mind? We’ll create a tasting tailored just for you.</p>
+							  <p class="service-price">Custom Pricing</p>
+				  
+							  <div class="service-actions">
+								<a href="mailto:info@kasamatastings.com?subject=Custom Event Quote Request&body=Hi! I'd like to request a quote for a custom wine tasting event." class="btn book-btn">GET QUOTE</a>
+								<button class="btn learn-btn" data-service="custom-event">LEARN MORE</button>
+							  </div>
 							</div>
 						</div>
 
