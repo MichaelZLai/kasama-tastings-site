@@ -6,70 +6,35 @@
 }
 
 /* ----- FAQ INTRODUCTION SECTION ----- */
+/* ----- FAQ INTRO ----- */
 .faq-intro {
-  margin-bottom: 4rem;
   text-align: center;
-}
-
-.faq-intro-content h2 {
-  font-size: 3rem;
-  color: var(--dark-text);
-  margin-bottom: 2rem;
-}
-
-.faq-intro-text {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.faq-intro-text > p {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 1.5rem;
-}
-
-.faq-includes-list {
-  background: white;
-  border-radius: 15px;
-  padding: 2rem;
-  margin: 2rem 0;
-  list-style: none;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.faq-includes-list li {
-  font-size: 1.1rem;
-  padding: 0.8rem 0;
-  border-bottom: 1px solid #f0f0f0;
-  display: flex;
-  align-items: center;
-}
-
-.faq-includes-list li:last-child {
-  border-bottom: none;
-}
-
-.faq-includes-list .optional {
-  color: var(--kt-green);
-  font-style: italic;
-  margin-left: 0.5rem;
-}
-
-.faq-additional-info {
-  background: var(--kt-green);
-  color: white;
-  padding: 2rem;
-  border-radius: 15px;
-  margin-top: 2rem;
-}
-
-.faq-additional-info p {
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
-.faq-additional-info p:last-child {
+  padding: 0 1.5rem 2.75rem;
   margin-bottom: 0;
+}
+
+.faq-eyebrow {
+  color: var(--kt-green);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 800;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.faq-intro h1 {
+  font-size: clamp(2.75rem, 5vw, 4.25rem);
+  line-height: 1.4;
+  color: #222;
+  margin-bottom: 1.45rem;
+}
+
+.faq-intro-copy {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #555;
 }
 
 /* ----- FAQ ACCORDION ----- */

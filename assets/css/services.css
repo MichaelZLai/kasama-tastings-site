@@ -22,9 +22,8 @@
 }
 
 .services-intro h1 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: clamp(2.75rem, 5vw, 4.25rem);
-  line-height: 1;
+  line-height: 1.4;
   color: #222;
   margin-bottom: 1.25rem;
 }
@@ -38,7 +37,7 @@
 }
 
 /* ----- FINDER + INCLUDED ----- */
-.experience-finder,
+
 .included-section {
   padding: 1rem 1.5rem;
   margin-bottom: 1em;
@@ -53,7 +52,6 @@
   box-shadow: 0 12px 35px rgba(0,0,0,0.05);
 }
 
-.finder-title,
 .included-title {
   display: flex;
   align-items: center;
@@ -62,14 +60,12 @@
   margin-bottom: 1.75rem;
 }
 
-.finder-title span,
 .included-title span {
   width: 170px;
   height: 1px;
   background: rgba(63,107,55,.35);
 }
 
-.finder-title h2,
 .included-title h2 {
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 1.45rem;
@@ -78,41 +74,6 @@
   font-weight: 400;
 }
 
-.finder-options {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.finder-option {
-  text-align: center;
-  padding: 0 1.25rem;
-  border-right: 1px solid rgba(0,0,0,0.12);
-  text-decoration: none;
-  color: #222;
-}
-
-.finder-option:last-child {
-  border-right: none;
-}
-
-.finder-option i {
-  display: block;
-  color: var(--kt-green);
-  font-size: 1.65rem;
-  margin-bottom: 0.75rem;
-}
-
-.finder-option strong {
-  display: block;
-  font-size: 0.95rem;
-  margin-bottom: 0.25rem;
-}
-
-.finder-option span {
-  display: block;
-  font-size: 0.85rem;
-  color: #555;
-}
 
 .included-section {
   padding-bottom: 2.5rem;
@@ -617,6 +578,18 @@
   
   /* Mobile Responsive Modal */
   @media screen and (max-width: 768px) {
+    .services-intro{
+      padding-top:0;
+    }
+
+    .service-content{
+      text-align: center;
+    }
+
+    .service-actions{
+      flex-direction: row;
+    }
+
     .modal-content {
         width: 95%;
         max-height: 90vh;
@@ -639,6 +612,47 @@
     .modal-close {
         top: 15px;
         right: 20px;
+    }
+
+    .included-section {
+      padding: 1rem 1rem 2rem;
+    }
+  
+    .included-title {
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .included-title span {
+      width: 50px;
+    }
+  
+    .included-title h2 {
+      font-size: 1.25rem;
+    }
+  
+    .included-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.85rem;
+    }
+  
+    .included-item {
+      border-right: none;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(63, 107, 55, 0.12);
+      border-radius: 14px;
+      padding: 1rem 0.75rem;
+    }
+  
+    .included-item i {
+      font-size: 1.15rem;
+      margin-bottom: 0.45rem;
+    }
+  
+    .included-item span {
+      font-size: 0.78rem;
+      line-height: 1.25;
+      display: block;
     }
   }
   
